@@ -561,7 +561,11 @@ permalink: /
                     <h2 class="cta-title">Ready to Transform Your Outdoor Space?</h2>
                     <p class="cta-text">Get a free, no-obligation quote. We respond within 24 hours.</p>
                 </div>
-                <form class="cta-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <form class="cta-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p style="display:none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <input type="email" name="email" class="cta-input" placeholder="Your email address" required>
                     <button type="submit" class="btn btn-primary">
                         Get Free Quote

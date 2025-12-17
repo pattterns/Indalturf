@@ -1,0 +1,92 @@
+---
+layout: layout.html
+title: Thank You
+---
+
+<style>
+    .success-page {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        padding: 2rem;
+    }
+    
+    .success-content {
+        background: white;
+        border-radius: 24px;
+        padding: 3rem 2rem;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    }
+    
+    .success-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 2rem;
+        background: #00502819;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .success-icon svg {
+        width: 40px;
+        height: 40px;
+        color: #005028;
+    }
+    
+    .success-content h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 1rem;
+    }
+    
+    .success-content p {
+        font-size: 1.125rem;
+        color: #666;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+    
+    .success-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #005028;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .success-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,80,40,0.3);
+    }
+</style>
+
+<div class="success-page">
+    <div class="success-content">
+        <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </div>
+        <h1>Thank You!</h1>
+        <p>We've received your request. Our team will get back to you within 24 hours with a personalized quote for your project.</p>
+        <a href="/" class="success-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="20" height="20">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+            Back to Home
+        </a>
+    </div>
+</div>
+
