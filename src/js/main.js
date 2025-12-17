@@ -409,7 +409,7 @@ window.addEventListener('load', function() {
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
 
-if (contactForm) {
+if (contactForm && formMessage) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
@@ -428,32 +428,15 @@ if (contactForm) {
             body: new URLSearchParams(formData).toString()
         })
         .then(() => {
-            // Show success message
-            formMessage.style.display = 'block';
-            contactForm.reset();
-            
-            // Reset button
-            buttonText.textContent = originalText;
-            button.disabled = false;
-            
-            // Hide message after 5 seconds
-            setTimeout(() => {
-                formMessage.style.display = 'none';
-            }, 5000);
+            // Hide form and show success message
+            contactForm.style.display = 'none';
+            formMessage.style.display = 'flex';
         })
         .catch(() => {
-            // Show error
-            formMessage.innerHTML = '<p style="color: #dc2626; font-weight: 600; margin: 0;">⚠️ Error sending. Please try again.</p>';
-            formMessage.style.display = 'block';
-            
-            // Reset button
+            // Show error and reset
             buttonText.textContent = originalText;
             button.disabled = false;
-            
-            // Hide message after 5 seconds
-            setTimeout(() => {
-                formMessage.style.display = 'none';
-            }, 5000);
+            alert('Error sending your request. Please try again or contact us directly.');
         });
     });
 }
