@@ -1,0 +1,94 @@
+backend:
+  name: github
+  repo: YOUR_USERNAME/indalturf  # Change to your GitHub repo
+  branch: main
+
+# For local development, uncomment this:
+# local_backend: true
+
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # Site Configuration
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "src/_data/site.json"
+        label: "General Settings"
+        name: "site"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Language", name: "lang", widget: "string", default: "en" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - label: "Social Media"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "WhatsApp Number", name: "whatsapp", widget: "string", required: false }
+          - label: "SEO Settings"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Meta Title", name: "title", widget: "string" }
+              - { label: "Meta Description", name: "description", widget: "text" }
+              - { label: "Keywords", name: "keywords", widget: "string" }
+
+  # Grass Models
+  - name: "grass-models"
+    label: "Grass Models"
+    label_singular: "Grass Model"
+    description: "Manage your artificial grass product catalog"
+    folder: "content/grass-models"
+    create: true
+    slug: "{{slug}}"
+    format: "json"
+    fields:
+      - { label: "Model Name", name: "name", widget: "string" }
+      - { label: "Slug (URL-friendly name)", name: "slug", widget: "string" }
+      - { label: "Height", name: "height", widget: "string", hint: "e.g. 40mm" }
+      - { label: "Price", name: "price", widget: "string", hint: "e.g. €32/m²" }
+      - { label: "Product Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - label: "Stats (1-4 scale)"
+        name: "stats"
+        widget: "object"
+        fields:
+          - { label: "Density", name: "density", widget: "number", min: 1, max: 4, default: 3 }
+          - { label: "Thickness", name: "thickness", widget: "number", min: 1, max: 4, default: 3 }
+          - { label: "Memory", name: "memory", widget: "number", min: 1, max: 4, default: 3 }
+          - { label: "Durability", name: "durability", widget: "number", min: 1, max: 4, default: 3 }
+
+  # JSON Data file for models (alternative approach)
+  - name: "grass-models-json"
+    label: "Grass Models (JSON)"
+    files:
+      - file: "src/_data/grass-models.json"
+        label: "All Grass Models"
+        name: "models"
+        widget: "list"
+        fields:
+          - { label: "Model Name", name: "name", widget: "string" }
+          - { label: "Slug", name: "slug", widget: "string" }
+          - { label: "Height", name: "height", widget: "string" }
+          - { label: "Price", name: "price", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Featured", name: "featured", widget: "boolean", default: false }
+          - label: "Stats"
+            name: "stats"
+            widget: "object"
+            fields:
+              - { label: "Density (1-4)", name: "density", widget: "number", min: 1, max: 4 }
+              - { label: "Thickness (1-4)", name: "thickness", widget: "number", min: 1, max: 4 }
+              - { label: "Memory (1-4)", name: "memory", widget: "number", min: 1, max: 4 }
+              - { label: "Durability (1-4)", name: "durability", widget: "number", min: 1, max: 4 }
+
+

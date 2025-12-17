@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.seo.description }}">
+    <meta name="keywords" content="{{ site.seo.keywords }}">
+    <meta name="author" content="{{ site.title }}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ site.seo.title }}">
+    <meta property="og:description" content="{{ site.seo.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{{ site.url }}/images/og-image.webp">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ site.seo.title }}">
+    <meta name="twitter:description" content="{{ site.seo.description }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>{{ title }} | {{ site.title }}</title>
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "{{ site.title }}",
+        "description": "{{ site.description }}",
+        "url": "{{ site.url }}",
+        "telephone": "{{ site.phone }}",
+        "email": "{{ site.email }}",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Almería",
+            "addressCountry": "ES"
+        },
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 36.834047,
+                "longitude": -2.463714
+            },
+            "geoRadius": "100000"
+        },
+        "priceRange": "€€",
+        "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+</head>
+<body>
+    {{ content | safe }}
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
