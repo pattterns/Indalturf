@@ -2106,8 +2106,8 @@ h4, .h4 {
 }
 
 .faq-title {
-  font-size: clamp(var(--text-2xl), 5vw, var(--text-4xl));
-  font-weight: 300;
+  font-size: clamp(var(--text-3xl), 6vw, var(--text-5xl));
+  font-weight: 700;
   line-height: 1.2;
   color: var(--color-black);
 }
