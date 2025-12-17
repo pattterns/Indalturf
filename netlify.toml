@@ -5,12 +5,11 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Redirect all 404s to index for SPA behavior (optional)
+# Redirect for Decap CMS admin
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/admin/*"
+  to = "/admin/index.html"
   status = 200
-  conditions = {Role = ["admin"]}
 
 # Headers for security and performance
 [[headers]]
