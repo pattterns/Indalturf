@@ -561,19 +561,22 @@ permalink: /
                     <h2 class="cta-title">Ready to Transform Your Outdoor Space?</h2>
                     <p class="cta-text">Get a free, no-obligation quote. We respond within 24 hours.</p>
                 </div>
-                <form class="cta-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success">
+                <form class="cta-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                     <input type="hidden" name="form-name" value="contact">
                     <p style="display:none;">
                         <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                     </p>
                     <input type="email" name="email" class="cta-input" placeholder="Your email address" required>
                     <button type="submit" class="btn btn-primary">
-                        Get Free Quote
+                        <span class="btn-text">Get Free Quote</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     </button>
                 </form>
+                <div id="formMessage" style="display: none; margin-top: 1rem; padding: 1rem; background: rgba(0, 80, 40, 0.1); border-radius: 12px; text-align: center;">
+                    <p style="color: #005028; font-weight: 600; margin: 0;">✓ Request received! We'll contact you as soon as possible.</p>
+                </div>
             </div>
         </div>
     </div>

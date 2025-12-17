@@ -402,3 +402,58 @@ window.addEventListener('load', function() {
         setTimeout(() => preloader.remove(), 500);
     }
 });
+
+// ============================================
+// Netlify Form Handler
+// ============================================
+const contactForm = document.getElementById('contactForm');
+const formMessage = document.getElementById('formMessage');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(contactForm);
+        const button = contactForm.querySelector('button[type="submit"]');
+        const buttonText = button.querySelector('.btn-text');
+        const originalText = buttonText.textContent;
+        
+        // Show loading state
+        buttonText.textContent = 'Sending...';
+        button.disabled = true;
+        
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+        })
+        .then(() => {
+            // Show success message
+            formMessage.style.display = 'block';
+            contactForm.reset();
+            
+            // Reset button
+            buttonText.textContent = originalText;
+            button.disabled = false;
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        })
+        .catch(() => {
+            // Show error
+            formMessage.innerHTML = '<p style="color: #dc2626; font-weight: 600; margin: 0;">⚠️ Error sending. Please try again.</p>';
+            formMessage.style.display = 'block';
+            
+            // Reset button
+            buttonText.textContent = originalText;
+            button.disabled = false;
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        });
+    });
+}
