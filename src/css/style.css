@@ -226,7 +226,7 @@ h4, .h4 {
 .text-hero {
   font-family: var(--font-primary);
   font-size: clamp(var(--text-4xl), 8vw, var(--text-7xl));
-  font-weight: 800;
+  font-weight: 300;
   line-height: var(--leading-tight);
   letter-spacing: -0.02em;
 }
@@ -704,7 +704,7 @@ h4, .h4 {
 .hero-overlay-text h3 {
   font-family: var(--font-primary);
   font-size: clamp(var(--text-3xl), 5vw, var(--text-5xl));
-  font-weight: 800;
+  font-weight: 300;
   color: var(--color-white);
   line-height: 1.1;
   text-shadow: 0 2px 20px rgba(0,0,0,0.4);
@@ -1316,7 +1316,7 @@ h4, .h4 {
 
 .about-title {
   font-size: clamp(var(--text-3xl), 6vw, var(--text-5xl));
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.1;
   color: var(--color-black);
   text-align: left;
@@ -1634,7 +1634,7 @@ h4, .h4 {
 
 .guarantees-title {
   font-size: var(--text-3xl);
-  font-weight: 800;
+  font-weight: 300;
   color: var(--color-black);
   margin-bottom: var(--space-8);
 }
@@ -1708,7 +1708,7 @@ h4, .h4 {
 
 .surfaces-title {
   font-size: clamp(var(--text-3xl), 6vw, var(--text-5xl));
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.1;
   color: var(--color-black);
 }
@@ -1870,7 +1870,7 @@ h4, .h4 {
 
 .why-title {
   font-size: clamp(var(--text-3xl), 6vw, var(--text-5xl));
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.1;
   color: var(--color-black);
 }
@@ -2107,7 +2107,7 @@ h4, .h4 {
 
 .faq-title {
   font-size: clamp(var(--text-3xl), 6vw, var(--text-5xl));
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.2;
   color: var(--color-black);
 }
@@ -2167,7 +2167,7 @@ h4, .h4 {
 
 .cta-title {
   font-size: clamp(var(--text-xl), 4vw, var(--text-3xl));
-  font-weight: 700;
+  font-weight: 300;
   color: var(--color-black);
   line-height: 1.2;
 }
@@ -2279,7 +2279,7 @@ h4, .h4 {
 
 .models-title {
   font-size: clamp(var(--text-3xl), 6vw, var(--text-5xl));
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.1;
   color: var(--color-black);
 }
@@ -2322,7 +2322,7 @@ h4, .h4 {
 
 .trust-title {
   font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
-  font-weight: 700;
+  font-weight: 300;
   color: var(--color-white);
   line-height: 1.2;
 }
