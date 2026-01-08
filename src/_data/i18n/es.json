@@ -1,0 +1,202 @@
+{
+  "lang": "es",
+  "langName": "Español",
+  "nav": {
+    "about": "Nosotros",
+    "surfaces": "Superficies",
+    "whyUs": "Por qué elegirnos",
+    "models": "Modelos",
+    "faq": "Preguntas",
+    "getQuote": "Solicitar presupuesto"
+  },
+  "hero": {
+    "label": "Expertos en césped artificial premium en Almería",
+    "title": "Transforma tu espacio<br>con césped premium.",
+    "subtitle": "Instalación profesional, materiales certificados europeos y garantía de 10 años. Tu jardín merece lo mejor.",
+    "cta": "Comenzar",
+    "imageOverlay": "El camino hacia un<br>jardín perfecto.",
+    "bookConsultation": "Reserva una consulta gratuita"
+  },
+  "stats": {
+    "experience": "Años de experiencia",
+    "projects": "Proyectos completados",
+    "installed": "m² instalados",
+    "warranty": "Garantía de producto",
+    "warrantyValue": "10 años"
+  },
+  "about": {
+    "eyebrow": "Sobre nosotros",
+    "title": "La excelencia vive<br>en los detalles.",
+    "lead": "Indalturf es un equipo de profesionales apasionados especializados en la instalación de césped artificial premium en toda Almería y la Costa de Almería.",
+    "text": "Combinamos soluciones innovadoras con artesanía meticulosa para crear espacios exteriores sostenibles, hermosos y duraderos.",
+    "values": {
+      "trust": {
+        "title": "Confianza",
+        "text": "Comunicación clara desde el primer contacto hasta la finalización del proyecto."
+      },
+      "excellence": {
+        "title": "Excelencia",
+        "text": "Precisión y pasión en cada proyecto que emprendemos."
+      },
+      "sustainability": {
+        "title": "Sostenibilidad",
+        "text": "Ahorra agua, elimina químicos, reduce el mantenimiento."
+      }
+    },
+    "guarantees": {
+      "title": "Garantía de calidad y éxito",
+      "items": [
+        {
+          "num": "01",
+          "title": "Experiencia especializada",
+          "text": "Nos enfocamos exclusivamente en césped artificial, garantizando habilidad incomparable."
+        },
+        {
+          "num": "02",
+          "title": "Resultados centrados en el cliente",
+          "text": "Cada proyecto adaptado para superar tus expectativas."
+        },
+        {
+          "num": "03",
+          "title": "Comunicación constante",
+          "text": "Te mantenemos informado en cada etapa del proceso."
+        },
+        {
+          "num": "04",
+          "title": "Materiales premium",
+          "text": "Productos certificados europeos de fabricantes líderes."
+        }
+      ]
+    }
+  },
+  "surfaces": {
+    "eyebrow": "Superficies de instalación",
+    "title": "Instalamos en<br>cualquier superficie",
+    "subtitle": "Desde patios de hormigón hasta terrenos naturales, nuestro equipo experto transforma cualquier espacio en un hermoso oasis verde.",
+    "items": [
+      { "name": "Jardines", "image": "gardens.webp" },
+      { "name": "Zonas de piscina", "image": "pool-areas.webp" },
+      { "name": "Terrazas", "image": "terraces.webp" },
+      { "name": "Comunidades", "image": "surface-pool.webp" },
+      { "name": "Deportivo", "image": "sports.webp" },
+      { "name": "Eventos y empresas", "image": "events-business.webp" },
+      { "name": "Parques infantiles", "image": "playgrounds.webp" },
+      { "name": "Obras públicas", "image": "public-works.webp" }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Por qué elegirnos",
+    "title": "La elección correcta para<br>césped artificial en Almería",
+    "features": [
+      {
+        "type": "image",
+        "title": "Clima mediterráneo",
+        "text": "Nuestros productos están especialmente seleccionados para el sol intenso y las condiciones secas de Almería.",
+        "image": "surface-pool.webp"
+      },
+      {
+        "type": "stat",
+        "number": "0L",
+        "label": "Agua necesaria<br>al año",
+        "dark": true
+      },
+      {
+        "type": "horizontal",
+        "title": "Apto para mascotas",
+        "text": "Seguro, no tóxico, fácil de limpiar, perfecto para tus amigos peludos.",
+        "image": "pet-friendly.webp"
+      },
+      {
+        "type": "text",
+        "icon": "shield",
+        "title": "Garantía de 10 años",
+        "text": "Respaldado por fabricantes europeos"
+      },
+      {
+        "type": "stat",
+        "number": "500€+",
+        "label": "Ahorro anual",
+        "dark": true
+      },
+      {
+        "type": "text",
+        "icon": "language",
+        "title": "Hablamos inglés",
+        "text": "Comunicación clara, sin barreras"
+      }
+    ]
+  },
+  "trust": {
+    "title": "Confianza de propietarios<br>en toda la Costa de Almería",
+    "text": "Imagina despertarte con un jardín verde y exuberante todos los días. Visualiza a tus hijos jugando descalzos sobre césped suave y seguro. Imagina celebrar reuniones inolvidables con amigos, sin preocuparte por el mantenimiento. Bienvenido a casa, a un estilo de vida donde la belleza exterior se encuentra con la vida sin esfuerzo."
+  },
+  "models": {
+    "eyebrow": "Nuestros productos",
+    "title": "Modelos de césped<br>premium",
+    "subtitle": "Elige de nuestra selección curada de césped artificial premium. Cada modelo diseñado para necesidades y preferencias específicas.",
+    "height": "Altura",
+    "stats": {
+      "density": "Densidad",
+      "thickness": "Grosor",
+      "memory": "Memoria",
+      "durability": "Durabilidad"
+    }
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Preguntas<br>frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre la instalación de césped artificial en Almería. ¿No encuentras lo que buscas? Contáctanos directamente.",
+    "items": [
+      {
+        "question": "¿Cuánto dura el césped artificial en el clima de Almería?",
+        "answer": "Nuestro césped artificial premium está específicamente diseñado para climas mediterráneos y viene con protección UV. Con una instalación adecuada y mantenimiento mínimo, puedes esperar 15-20 años de rendimiento óptimo. Todos nuestros productos tienen una garantía del fabricante de 10 años contra degradación UV y defectos de materiales."
+      },
+      {
+        "question": "¿Cuánto cuesta la instalación de césped artificial en Almería?",
+        "answer": "Los costes varían según el modelo de césped, el tamaño del área y la preparación de la superficie necesaria. Nuestros precios oscilan entre 22-32€/m² para materiales, con instalación incluida. Proporcionamos presupuestos gratuitos y detallados sin costes ocultos. La mayoría de jardines residenciales (50-100m²) oscilan entre 2.500-4.500€ totalmente instalados."
+      },
+      {
+        "question": "¿Es el césped artificial seguro para mascotas y niños?",
+        "answer": "Absolutamente. Nuestro césped artificial está certificado como no tóxico e hipoalergénico, libre de plomo y químicos dañinos. El sistema de drenaje avanzado asegura que la orina de las mascotas drene rápidamente, y la superficie es fácil de limpiar con agua. Las fibras suaves son gentiles con la piel de los niños, y no hay riesgo de barro, pesticidas o alérgenos comunes del césped natural."
+      },
+      {
+        "question": "¿Cuánto tiempo tarda la instalación?",
+        "answer": "La mayoría de las instalaciones residenciales se completan en 1-3 días, dependiendo del tamaño del área y la preparación de la superficie requerida. Un jardín típico de 50m² generalmente se puede terminar en un solo día. Proporcionaremos un cronograma preciso durante tu consulta gratuita."
+      },
+      {
+        "question": "¿Cubren toda la provincia de Almería?",
+        "answer": "¡Sí! Cubrimos toda la provincia de Almería incluyendo Mojácar, Vera, Garrucha, Carboneras, Níjar, Roquetas de Mar, Aguadulce y la capital. También atendemos a residentes internacionales y propietarios de casas de vacaciones en toda la región de la Costa de Almería."
+      },
+      {
+        "question": "¿Qué mantenimiento se requiere?",
+        "answer": "¡Prácticamente ninguno! Cepillado ocasional para levantar las fibras y rociado con manguera para eliminar el polvo es todo lo que se necesita. A diferencia del césped natural, no hay corte, riego, fertilización o control de malezas. Recomendamos un simple cepillado cada pocos meses y un enjuague después de días polvorientos. Eso es todo."
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para transformar tu espacio exterior?",
+    "subtitle": "Obtén un presupuesto gratuito y sin compromiso. Respondemos en 24 horas.",
+    "emailPlaceholder": "Tu dirección de email",
+    "button": "Solicitar presupuesto gratuito",
+    "successMessage": "¡Solicitud recibida! Te contactaremos lo antes posible."
+  },
+  "footer": {
+    "tagline": "Instalación de césped artificial premium en toda Almería. Transformando espacios exteriores con calidad, cuidado y experiencia.",
+    "navigation": "Navegación",
+    "areas": "Áreas que servimos",
+    "contact": "Contacto",
+    "areasServed": [
+      "Ciudad de Almería",
+      "Mojácar",
+      "Vera y Garrucha",
+      "Roquetas de Mar",
+      "Costa de Almería"
+    ],
+    "location": "Almería, España",
+    "copyright": "© 2025 Indalturf. Todos los derechos reservados."
+  },
+  "whatsapp": {
+    "text": "WhatsApp"
+  }
+}
+

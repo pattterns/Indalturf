@@ -18,6 +18,26 @@ module.exports = function(eleventyConfig) {
     return models;
   });
   
+  // Global data for i18n
+  eleventyConfig.addGlobalData("languages", ["es", "en"]);
+  eleventyConfig.addGlobalData("defaultLang", "es");
+  
+  // Add i18n filter
+  eleventyConfig.addFilter("i18n", function(key, lang) {
+    lang = lang || "es";
+    try {
+      const translations = require(`./src/_data/i18n/${lang}.json`);
+      const keys = key.split(".");
+      let value = translations;
+      for (const k of keys) {
+        value = value[k];
+      }
+      return value || key;
+    } catch (e) {
+      return key;
+    }
+  });
+  
   return {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",

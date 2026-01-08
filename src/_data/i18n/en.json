@@ -1,0 +1,202 @@
+{
+  "lang": "en",
+  "langName": "English",
+  "nav": {
+    "about": "About",
+    "surfaces": "Surfaces",
+    "whyUs": "Why Us",
+    "models": "Models",
+    "faq": "FAQ",
+    "getQuote": "Get Quote"
+  },
+  "hero": {
+    "label": "Premium Artificial Grass Experts in Almería",
+    "title": "Transform Your Space<br>With Premium Turf.",
+    "subtitle": "Expert installation, European-certified materials, and a 10-year warranty. Your garden deserves the best.",
+    "cta": "Get Started",
+    "imageOverlay": "The Journey to a<br>Perfect Garden.",
+    "bookConsultation": "Book a Free Consultation"
+  },
+  "stats": {
+    "experience": "Years of Experience",
+    "projects": "Projects Completed",
+    "installed": "m² Installed",
+    "warranty": "Product Warranty",
+    "warrantyValue": "10yr"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Excellence Lives<br>In The Details.",
+    "lead": "Indalturf is a team of passionate professionals specializing in premium artificial grass installation throughout Almería and the Costa de Almería region.",
+    "text": "We combine innovative solutions with meticulous craftsmanship to create outdoor spaces that are sustainable, beautiful, and built to last.",
+    "values": {
+      "trust": {
+        "title": "Trust",
+        "text": "Clear communication from first contact to project completion."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "text": "Precision and passion in every project we undertake."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "text": "Save water, eliminate chemicals, reduce maintenance."
+      }
+    },
+    "guarantees": {
+      "title": "Quality & Success Guarantee",
+      "items": [
+        {
+          "num": "01",
+          "title": "Specialized Expertise",
+          "text": "We focus exclusively on artificial grass, ensuring unmatched skill."
+        },
+        {
+          "num": "02",
+          "title": "Client-Focused Results",
+          "text": "Every project tailored to exceed your expectations."
+        },
+        {
+          "num": "03",
+          "title": "Constant Communication",
+          "text": "We keep you informed at every stage of the process."
+        },
+        {
+          "num": "04",
+          "title": "Premium Materials",
+          "text": "European-certified products from leading manufacturers."
+        }
+      ]
+    }
+  },
+  "surfaces": {
+    "eyebrow": "Installation Surfaces",
+    "title": "We Install on<br>Any Surface",
+    "subtitle": "From concrete patios to natural terrain, our expert team transforms any space into a beautiful green oasis.",
+    "items": [
+      { "name": "Gardens", "image": "gardens.webp" },
+      { "name": "Pool Areas", "image": "pool-areas.webp" },
+      { "name": "Terraces", "image": "terraces.webp" },
+      { "name": "Communities", "image": "surface-pool.webp" },
+      { "name": "Sports", "image": "sports.webp" },
+      { "name": "Events & Business", "image": "events-business.webp" },
+      { "name": "Playgrounds", "image": "playgrounds.webp" },
+      { "name": "Public Works", "image": "public-works.webp" }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Why Choose Us",
+    "title": "The Right Choice for<br>Artificial Grass in Almería",
+    "features": [
+      {
+        "type": "image",
+        "title": "Mediterranean Climate",
+        "text": "Our products are specially selected for Almería's intense sun and dry conditions.",
+        "image": "surface-pool.webp"
+      },
+      {
+        "type": "stat",
+        "number": "0L",
+        "label": "Water Required<br>Per Year",
+        "dark": true
+      },
+      {
+        "type": "horizontal",
+        "title": "Pet Friendly",
+        "text": "Safe, non-toxic, easy to clean, perfect for your furry friends.",
+        "image": "pet-friendly.webp"
+      },
+      {
+        "type": "text",
+        "icon": "shield",
+        "title": "10-Year Warranty",
+        "text": "Backed by European manufacturers"
+      },
+      {
+        "type": "stat",
+        "number": "€500+",
+        "label": "Annual Savings",
+        "dark": true
+      },
+      {
+        "type": "text",
+        "icon": "language",
+        "title": "English-Speaking",
+        "text": "Clear communication, no barriers"
+      }
+    ]
+  },
+  "trust": {
+    "title": "Trusted by Homeowners<br>Across Costa de Almería",
+    "text": "Imagine waking up to a lush green garden every day. Picture your children playing barefoot on soft, safe grass. Envision hosting unforgettable gatherings with friends, without worrying about maintenance. Welcome home to a lifestyle where outdoor beauty meets effortless living."
+  },
+  "models": {
+    "eyebrow": "Our Products",
+    "title": "Premium Grass<br>Models",
+    "subtitle": "Choose from our curated selection of premium artificial grass. Each model designed for specific needs and preferences.",
+    "height": "Height",
+    "stats": {
+      "density": "Density",
+      "thickness": "Thickness",
+      "memory": "Memory",
+      "durability": "Durability"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked<br>Questions",
+    "subtitle": "Everything you need to know about artificial grass installation in Almería. Can't find what you're looking for? Contact us directly.",
+    "items": [
+      {
+        "question": "How long does artificial grass last in Almería's climate?",
+        "answer": "Our premium artificial grass is specifically designed for Mediterranean climates and comes with UV protection. With proper installation and minimal maintenance, you can expect 15-20 years of optimal performance. All our products carry a 10-year manufacturer warranty against UV degradation and material defects."
+      },
+      {
+        "question": "How much does artificial grass installation cost in Almería?",
+        "answer": "Costs vary depending on the grass model, area size, and surface preparation needed. Our prices range from €22-32/m² for materials, with installation included. We provide free, detailed quotes with no hidden costs. Most residential gardens (50-100m²) range between €2,500-€4,500 fully installed."
+      },
+      {
+        "question": "Is artificial grass safe for pets and children?",
+        "answer": "Absolutely. Our artificial grass is certified non-toxic and hypoallergenic, free from lead and harmful chemicals. The advanced drainage system ensures pet urine drains quickly, and the surface is easy to clean with water. The soft fibers are gentle on children's skin, and there's no risk of mud, pesticides, or allergens common with natural grass."
+      },
+      {
+        "question": "How long does installation take?",
+        "answer": "Most residential installations are completed in 1-3 days, depending on the area size and surface preparation required. A typical 50m² garden can usually be finished in a single day. We'll provide an accurate timeline during your free consultation."
+      },
+      {
+        "question": "Do you serve the entire Almería province?",
+        "answer": "Yes! We cover all of Almería province including Mojácar, Vera, Garrucha, Carboneras, Níjar, Roquetas de Mar, Aguadulce, and the capital city. We also serve international residents and holiday home owners throughout the Costa de Almería region."
+      },
+      {
+        "question": "What maintenance is required?",
+        "answer": "Virtually none! Occasional brushing to lift the fibers and hosing to remove dust is all that's needed. Unlike natural grass, there's no mowing, watering, fertilizing, or weed control. We recommend a simple brush every few months and a rinse after dusty days. That's it."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Transform Your Outdoor Space?",
+    "subtitle": "Get a free, no-obligation quote. We respond within 24 hours.",
+    "emailPlaceholder": "Your email address",
+    "button": "Get Free Quote",
+    "successMessage": "Request received! We'll contact you as soon as possible."
+  },
+  "footer": {
+    "tagline": "Premium artificial grass installation throughout Almería. Transforming outdoor spaces with quality, care, and expertise.",
+    "navigation": "Navigation",
+    "areas": "Areas We Serve",
+    "contact": "Contact",
+    "areasServed": [
+      "Almería City",
+      "Mojácar",
+      "Vera & Garrucha",
+      "Roquetas de Mar",
+      "Costa de Almería"
+    ],
+    "location": "Almería, Spain",
+    "copyright": "© 2025 Indalturf. All rights reserved."
+  },
+  "whatsapp": {
+    "text": "WhatsApp"
+  }
+}
+
