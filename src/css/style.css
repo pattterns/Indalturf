@@ -2350,6 +2350,132 @@ h4, .h4 {
 }
 
 /* ============================================
+   11i. COMPONENT: Partners Section
+   ============================================ */
+.partners-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-10);
+}
+
+.partners-title {
+  font-size: clamp(var(--text-3xl), 6vw, var(--text-5xl));
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
+.partners-header-right p {
+  font-size: var(--text-base);
+  color: var(--color-gray-600);
+  line-height: var(--leading-relaxed);
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.partner-card {
+  background: var(--color-white);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  border: 1px solid var(--color-gray-200);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  text-decoration: none;
+  color: inherit;
+}
+
+.partner-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  padding: var(--space-3);
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.6);
+  transition: all 0.3s ease;
+}
+
+.partner-card:hover .partner-logo img {
+  filter: grayscale(0%) opacity(1);
+}
+
+.partner-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.partner-description {
+  font-size: var(--text-sm);
+  color: var(--color-gray-600);
+  line-height: var(--leading-relaxed);
+}
+
+/* Tablet Responsive */
+@media (min-width: 768px) {
+  .partners-header {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: end;
+    gap: var(--space-12);
+  }
+  
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+  
+  .partner-card {
+    padding: var(--space-10);
+  }
+  
+  .partner-logo {
+    min-height: 70px;
+  }
+  
+  .partner-logo img {
+    max-height: 60px;
+  }
+}
+
+/* Desktop Responsive */
+@media (min-width: 1024px) {
+  .partners-grid {
+    gap: var(--space-8);
+  }
+  
+  .partner-logo {
+    min-height: 80px;
+  }
+  
+  .partner-logo img {
+    max-height: 70px;
+  }
+}
+
+/* ============================================
    11f. COMPONENT: Stats Banner
    ============================================ */
 /* Trust Banner - Simple & Inspirational */

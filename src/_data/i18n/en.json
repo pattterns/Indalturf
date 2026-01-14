@@ -6,6 +6,7 @@
     "surfaces": "Surfaces",
     "whyUs": "Why Us",
     "models": "Models",
+    "partners": "Partners",
     "faq": "FAQ",
     "getQuote": "Get Quote"
   },
@@ -141,6 +142,25 @@
       "memory": "Memory",
       "durability": "Durability"
     }
+  },
+  "partners": {
+    "eyebrow": "Our Partners",
+    "title": "Working with the<br>best in the industry",
+    "intro": "At IndalTurf, we work alongside recognized artificial grass manufacturers and distributors, bringing our expertise as specialized installers. These companies trust us to carry out installations that meet the technical standards of the product.",
+    "items": [
+      {
+        "name": "Ibercésped",
+        "description": "Leading company in high-quality artificial grass. IndalTurf collaborates as a professional installer, ensuring correct, durable placement adapted to each space.",
+        "logo": "partner-ibercesped.svg",
+        "url": "https://ibercesped.com/"
+      },
+      {
+        "name": "Césped Express",
+        "description": "Distributor specialized in artificial grass solutions for gardens, terraces and sports areas.",
+        "logo": "partner-cesped-express.png",
+        "url": "https://cespedartificial.madrid/"
+      }
+    ]
   },
   "faq": {
     "eyebrow": "FAQ",

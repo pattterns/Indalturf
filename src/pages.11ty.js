@@ -394,6 +394,34 @@ module.exports = class {
     </div>
 </section>
 
+<!-- PARTNERS SECTION -->
+<section class="section bg-light" id="partners">
+    <div class="container">
+        <div class="partners-header reveal">
+            <div class="partners-header-left">
+                <span class="section-eyebrow">${i18n.partners.eyebrow}</span>
+                <h2 class="partners-title">${i18n.partners.title}</h2>
+            </div>
+            <div class="partners-header-right">
+                <p>${i18n.partners.intro}</p>
+            </div>
+        </div>
+        
+        <div class="partners-grid">
+            ${i18n.partners.items.map((partner, index) => `
+            <a href="${partner.url}" target="_blank" rel="noopener noreferrer" class="partner-card reveal stagger-${index + 1}">
+                <div class="partner-logo">
+                    <img src="/images/${partner.logo}" alt="${partner.name}" loading="lazy">
+                </div>
+                <div class="partner-content">
+                    <p class="partner-description">${partner.description}</p>
+                </div>
+            </a>
+            `).join('')}
+        </div>
+    </div>
+</section>
+
 <!-- FAQ SECTION -->
 <section class="section" id="faq">
     <div class="container">

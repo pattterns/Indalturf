@@ -6,6 +6,7 @@
     "surfaces": "Superficies",
     "whyUs": "Por qué elegirnos",
     "models": "Modelos",
+    "partners": "Colaboradores",
     "faq": "Preguntas",
     "getQuote": "Solicitar presupuesto"
   },
@@ -141,6 +142,25 @@
       "memory": "Memoria",
       "durability": "Durabilidad"
     }
+  },
+  "partners": {
+    "eyebrow": "Nuestros colaboradores",
+    "title": "Trabajamos con los<br>mejores del sector",
+    "intro": "En IndalTurf trabajamos junto a fabricantes y distribuidores reconocidos de césped artificial, aportando nuestra experiencia como empresa instaladora especializada. Estas empresas confían en nosotros para llevar a cabo instalaciones que cumplen los estándares técnicos del producto.",
+    "items": [
+      {
+        "name": "Ibercésped",
+        "description": "Empresa referente en césped artificial de alta calidad. IndalTurf colabora como instalador profesional, garantizando una colocación correcta, duradera y adaptada a cada espacio.",
+        "logo": "partner-ibercesped.svg",
+        "url": "https://ibercesped.com/"
+      },
+      {
+        "name": "Césped Express",
+        "description": "Distribuidor especializado en soluciones de césped artificial para jardines, terrazas y zonas deportivas.",
+        "logo": "partner-cesped-express.png",
+        "url": "https://cespedartificial.madrid/"
+      }
+    ]
   },
   "faq": {
     "eyebrow": "Preguntas frecuentes",
