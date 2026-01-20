@@ -3,7 +3,7 @@
     "name": "Roma",
     "slug": "roma-32mm",
     "height": "32 mm",
-    "image": "/images/modelos-cesped/roma%2032.png",
+    "image": "/images/modelos-cesped/roma%2032.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
@@ -15,7 +15,7 @@
     "name": "Roma",
     "slug": "roma-42mm",
     "height": "42 mm",
-    "image": "/images/modelos-cesped/roma%2042.png",
+    "image": "/images/modelos-cesped/roma%2042.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
@@ -27,7 +27,7 @@
     "name": "Viveza",
     "slug": "viveza-40mm",
     "height": "40 mm",
-    "image": "/images/modelos-cesped/viveza%2040.png",
+    "image": "/images/modelos-cesped/viveza%2040.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
@@ -39,7 +39,7 @@
     "name": "Viveza",
     "slug": "viveza-45mm",
     "height": "45 mm",
-    "image": "/images/modelos-cesped/viveza%2045.png",
+    "image": "/images/modelos-cesped/viveza%2045.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
@@ -51,7 +51,7 @@
     "name": "Fortaleza",
     "slug": "fortaleza-50mm",
     "height": "50 mm",
-    "image": "/images/modelos-cesped/fortaleza%2050.png",
+    "image": "/images/modelos-cesped/fortaleza%2050.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
@@ -63,7 +63,7 @@
     "name": "Multi Imperial",
     "slug": "multi-imperial-45mm",
     "height": "45 mm",
-    "image": "/images/modelos-cesped/imperial%2045.png",
+    "image": "/images/modelos-cesped/imperial%2045.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
@@ -75,7 +75,7 @@
     "name": "Multi Imperial",
     "slug": "multi-imperial-50mm",
     "height": "50 mm",
-    "image": "/images/modelos-cesped/imperial%2050.png",
+    "image": "/images/modelos-cesped/imperial%2050.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
@@ -87,7 +87,7 @@
     "name": "Multi Imperial",
     "slug": "multi-imperial-65mm",
     "height": "65 mm",
-    "image": "/images/modelos-cesped/imperial%2065.png",
+    "image": "/images/modelos-cesped/imperial%2065.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
@@ -99,7 +99,7 @@
     "name": "Vera Colors",
     "slug": "vera-colors-25mm",
     "height": "25 mm",
-    "image": "/images/modelos-cesped/vera%2025.png",
+    "image": "/images/modelos-cesped/vera%2025.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
@@ -111,7 +111,7 @@
     "name": "Event",
     "slug": "event-20mm",
     "height": "20 mm",
-    "image": "/images/modelos-cesped/event%2020.png",
+    "image": "/images/modelos-cesped/event%2020.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
