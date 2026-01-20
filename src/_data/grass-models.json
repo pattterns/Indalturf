@@ -1,63 +1,123 @@
 [
   {
-    "name": "Mojácar Premium",
-    "slug": "mojacar-premium",
-    "height": "40mm",
-    "price": "€32/m²",
-    "image": "/images/grass-mojacar.webp",
-    "stats": {
-      "density": 4,
-      "thickness": 4,
-      "memory": 4,
-      "durability": 4
-    },
-    "description": "Our flagship model. Ultra-realistic appearance with exceptional durability.",
-    "featured": true
-  },
-  {
-    "name": "Cabo de Gata",
-    "slug": "cabo-de-gata",
-    "height": "35mm",
-    "price": "€28/m²",
-    "image": "/images/grass-cabo.webp",
-    "stats": {
-      "density": 4,
-      "thickness": 3,
-      "memory": 4,
-      "durability": 4
-    },
-    "description": "Perfect balance of quality and value. Ideal for gardens and terraces.",
-    "featured": true
-  },
-  {
-    "name": "Níjar Comfort",
-    "slug": "nijar-comfort",
-    "height": "30mm",
-    "price": "€24/m²",
-    "image": "/images/grass-nijar.webp",
+    "name": "Roma",
+    "slug": "roma-32mm",
+    "height": "32 mm",
+    "image": "/images/modelos-cesped/roma%2032.png",
     "stats": {
       "density": 3,
       "thickness": 3,
       "memory": 3,
-      "durability": 4
-    },
-    "description": "Soft underfoot with excellent resilience. Great for families with children.",
-    "featured": false
+      "durability": 3
+    }
   },
   {
-    "name": "Tabernas Sport",
-    "slug": "tabernas-sport",
-    "height": "25mm",
-    "price": "€22/m²",
-    "image": "/images/grass-tabernas.webp",
+    "name": "Roma",
+    "slug": "roma-42mm",
+    "height": "42 mm",
+    "image": "/images/modelos-cesped/roma%2042.png",
     "stats": {
-      "density": 4,
+      "density": 3,
       "thickness": 3,
-      "memory": 4,
-      "durability": 4
-    },
-    "description": "Designed for high-traffic areas and sports installations.",
-    "featured": false
+      "memory": 3,
+      "durability": 3
+    }
+  },
+  {
+    "name": "Viveza",
+    "slug": "viveza-40mm",
+    "height": "40 mm",
+    "image": "/images/modelos-cesped/viveza%2040.png",
+    "stats": {
+      "density": 3,
+      "thickness": 3,
+      "memory": 3,
+      "durability": 3
+    }
+  },
+  {
+    "name": "Viveza",
+    "slug": "viveza-45mm",
+    "height": "45 mm",
+    "image": "/images/modelos-cesped/viveza%2045.png",
+    "stats": {
+      "density": 3,
+      "thickness": 3,
+      "memory": 3,
+      "durability": 3
+    }
+  },
+  {
+    "name": "Fortaleza",
+    "slug": "fortaleza-50mm",
+    "height": "50 mm",
+    "image": "/images/modelos-cesped/fortaleza%2050.png",
+    "stats": {
+      "density": 3,
+      "thickness": 3,
+      "memory": 3,
+      "durability": 3
+    }
+  },
+  {
+    "name": "Multi Imperial",
+    "slug": "multi-imperial-45mm",
+    "height": "45 mm",
+    "image": "/images/modelos-cesped/imperial%2045.png",
+    "stats": {
+      "density": 3,
+      "thickness": 3,
+      "memory": 3,
+      "durability": 3
+    }
+  },
+  {
+    "name": "Multi Imperial",
+    "slug": "multi-imperial-50mm",
+    "height": "50 mm",
+    "image": "/images/modelos-cesped/imperial%2050.png",
+    "stats": {
+      "density": 3,
+      "thickness": 3,
+      "memory": 3,
+      "durability": 3
+    }
+  },
+  {
+    "name": "Multi Imperial",
+    "slug": "multi-imperial-65mm",
+    "height": "65 mm",
+    "image": "/images/modelos-cesped/imperial%2065.png",
+    "stats": {
+      "density": 3,
+      "thickness": 3,
+      "memory": 3,
+      "durability": 3
+    }
+  },
+  {
+    "name": "Vera Colors",
+    "slug": "vera-colors-25mm",
+    "height": "25 mm",
+    "image": "/images/modelos-cesped/vera%2025.png",
+    "stats": {
+      "density": 3,
+      "thickness": 3,
+      "memory": 3,
+      "durability": 3
+    }
+  },
+  {
+    "name": "Event",
+    "slug": "event-20mm",
+    "height": "20 mm",
+    "image": "/images/modelos-cesped/event%2020.png",
+    "stats": {
+      "density": 3,
+      "thickness": 3,
+      "memory": 3,
+      "durability": 3
+    }
   }
 ]
 
