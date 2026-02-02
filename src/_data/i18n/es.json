@@ -79,7 +79,7 @@
       { "name": "Zonas de piscina", "image": "pool-areas.webp" },
       { "name": "Terrazas", "image": "terraces.webp" },
       { "name": "Comunidades", "image": "surface-pool.webp" },
-      { "name": "Deportivo", "image": "sports.webp" },
+      { "name": "Pistas deportivas", "image": "sports.webp" },
       { "name": "Eventos y empresas", "image": "events-business.webp" },
       { "name": "Parques infantiles", "image": "playgrounds.webp" },
       { "name": "Obras públicas", "image": "public-works.webp" }
@@ -196,7 +196,24 @@
   "cta": {
     "title": "¿Listo para transformar tu espacio exterior?",
     "subtitle": "Obtén un presupuesto gratuito y sin compromiso. Respondemos en 24 horas.",
+    "namePlaceholder": "Nombre y apellidos",
     "emailPlaceholder": "Tu dirección de email",
+    "phonePlaceholder": "Teléfono",
+    "postalCodePlaceholder": "Código postal",
+    "installationTypeLabel": "¿Dónde quieres instalar el césped artificial?",
+    "installationTypePlaceholder": "¿Dónde quieres el césped?",
+    "installationTypes": [
+      "Jardín",
+      "Zona de piscina",
+      "Terraza",
+      "Comunidad",
+      "Pista deportiva",
+      "Eventos y empresas",
+      "Parque infantil",
+      "Obra pública",
+      "Otro"
+    ],
+    "squareMetersPlaceholder": "Metros cuadrados aproximados",
     "button": "Solicitar presupuesto gratuito",
     "successMessage": "¡Solicitud recibida! Te contactaremos lo antes posible."
   },
@@ -210,6 +227,10 @@
       "Mojácar",
       "Vera y Garrucha",
       "Roquetas de Mar",
+      "Macael",
+      "Tijola",
+      "Tabernas",
+      "Albox",
       "Costa de Almería"
     ],
     "location": "Almería, España",

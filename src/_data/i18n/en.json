@@ -79,7 +79,7 @@
       { "name": "Pool Areas", "image": "pool-areas.webp" },
       { "name": "Terraces", "image": "terraces.webp" },
       { "name": "Communities", "image": "surface-pool.webp" },
-      { "name": "Sports", "image": "sports.webp" },
+      { "name": "Sports Facilities", "image": "sports.webp" },
       { "name": "Events & Business", "image": "events-business.webp" },
       { "name": "Playgrounds", "image": "playgrounds.webp" },
       { "name": "Public Works", "image": "public-works.webp" }
@@ -196,7 +196,24 @@
   "cta": {
     "title": "Ready to Transform Your Outdoor Space?",
     "subtitle": "Get a free, no-obligation quote. We respond within 24 hours.",
+    "namePlaceholder": "Full name",
     "emailPlaceholder": "Your email address",
+    "phonePlaceholder": "Phone number",
+    "postalCodePlaceholder": "Postal code",
+    "installationTypeLabel": "Where do you want to install the artificial grass?",
+    "installationTypePlaceholder": "Where do you want the grass?",
+    "installationTypes": [
+      "Garden",
+      "Pool area",
+      "Terrace",
+      "Community",
+      "Sports facility",
+      "Events & business",
+      "Playground",
+      "Public works",
+      "Other"
+    ],
+    "squareMetersPlaceholder": "Approximate square meters",
     "button": "Get Free Quote",
     "successMessage": "Request received! We'll contact you as soon as possible."
   },
@@ -210,6 +227,10 @@
       "Mojácar",
       "Vera & Garrucha",
       "Roquetas de Mar",
+      "Macael",
+      "Tijola",
+      "Tabernas",
+      "Albox",
       "Costa de Almería"
     ],
     "location": "Almería, Spain",

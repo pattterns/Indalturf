@@ -471,30 +471,44 @@ module.exports = class {
             
             <!-- Content row -->
             <div class="cta-bottom">
-                <div class="cta-text-col">
-                    <h2 class="cta-title">${i18n.cta.title}</h2>
-                    <p class="cta-text">${i18n.cta.subtitle}</p>
-                </div>
-                <div class="cta-form-wrapper">
-                    <form class="cta-form" id="contactForm" name="contact-${lang}" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                        <input type="hidden" name="form-name" value="contact-${lang}">
-                        <input type="hidden" name="language" value="${lang}">
-                        <p style="display:none;">
-                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                        </p>
-                        <input type="email" name="email" class="cta-input" placeholder="${i18n.cta.emailPlaceholder}" required>
-                        <button type="submit" class="btn btn-primary">
-                            <span class="btn-text">${i18n.cta.button}</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                <div class="cta-content-wrapper">
+                    <div class="cta-text-col">
+                        <h2 class="cta-title">${i18n.cta.title}</h2>
+                        <p class="cta-text">${i18n.cta.subtitle}</p>
+                    </div>
+                    <div class="cta-form-wrapper">
+                        <form class="cta-form" id="contactForm" name="contact-${lang}" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="contact-${lang}">
+                            <input type="hidden" name="language" value="${lang}">
+                            <p style="display:none;">
+                                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                            </p>
+                            <div class="cta-form-grid">
+                                <input type="text" name="name" class="cta-input" placeholder="${i18n.cta.namePlaceholder}" required>
+                                <input type="email" name="email" class="cta-input" placeholder="${i18n.cta.emailPlaceholder}" required>
+                                <input type="tel" name="phone" class="cta-input" placeholder="${i18n.cta.phonePlaceholder}" required>
+                                <input type="text" name="postal_code" class="cta-input" placeholder="${i18n.cta.postalCodePlaceholder}" required>
+                                <select name="installation_type" class="cta-input" required>
+                                    <option value="" disabled selected>${i18n.cta.installationTypePlaceholder}</option>
+                                    ${i18n.cta.installationTypes.map(type => `
+                                    <option value="${type}">${type}</option>
+                                    `).join('')}
+                                </select>
+                                <input type="number" name="square_meters" class="cta-input" placeholder="${i18n.cta.squareMetersPlaceholder}" min="1" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">
+                                <span class="btn-text">${i18n.cta.button}</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg>
+                            </button>
+                        </form>
+                        <div id="formMessage" class="form-success-message" style="display: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="24" height="24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                        </button>
-                    </form>
-                    <div id="formMessage" class="form-success-message" style="display: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="24" height="24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <p>${i18n.cta.successMessage}</p>
+                            <p>${i18n.cta.successMessage}</p>
+                        </div>
                     </div>
                 </div>
             </div>

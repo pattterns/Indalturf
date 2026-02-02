@@ -9,7 +9,12 @@
     "dev": "eleventy --serve --watch",
     "start": "npm run dev"
   },
-  "keywords": ["artificial grass", "turf", "almeria", "spain"],
+  "keywords": [
+    "artificial grass",
+    "turf",
+    "almeria",
+    "spain"
+  ],
   "author": "Indalturf",
   "license": "ISC",
   "type": "commonjs",

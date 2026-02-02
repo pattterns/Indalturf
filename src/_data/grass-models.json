@@ -1,26 +1,38 @@
 [
   {
-    "name": "Roma",
-    "slug": "roma-32mm",
-    "height": "32 mm",
-    "image": "/images/modelos-cesped/roma%2032.webp",
+    "name": "Event",
+    "slug": "event-20mm",
+    "height": "20 mm",
+    "image": "/images/modelos-cesped/event%2020.webp",
     "stats": {
-      "density": 3,
-      "thickness": 3,
-      "memory": 3,
+      "density": 4,
+      "thickness": 1,
+      "memory": 2,
+      "durability": 3
+    }
+  },
+  {
+    "name": "Vera Colors",
+    "slug": "vera-colors-25mm",
+    "height": "25 mm",
+    "image": "/images/modelos-cesped/vera%2025.webp",
+    "stats": {
+      "density": 4,
+      "thickness": 2,
+      "memory": 2,
       "durability": 3
     }
   },
   {
     "name": "Roma",
-    "slug": "roma-42mm",
-    "height": "42 mm",
-    "image": "/images/modelos-cesped/roma%2042.webp",
+    "slug": "roma-32mm",
+    "height": "32 mm",
+    "image": "/images/modelos-cesped/roma%2032.webp",
     "stats": {
-      "density": 3,
-      "thickness": 3,
-      "memory": 3,
-      "durability": 3
+      "density": 4,
+      "thickness": 2,
+      "memory": 2,
+      "durability": 4
     }
   },
   {
@@ -36,26 +48,26 @@
     }
   },
   {
-    "name": "Viveza",
-    "slug": "viveza-45mm",
-    "height": "45 mm",
-    "image": "/images/modelos-cesped/viveza%2040.webp",
+    "name": "Roma",
+    "slug": "roma-42mm",
+    "height": "42 mm",
+    "image": "/images/roma%2042.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
       "memory": 3,
-      "durability": 3
+      "durability": 4
     }
   },
   {
-    "name": "Fortaleza",
-    "slug": "fortaleza-50mm",
-    "height": "50 mm",
-    "image": "/images/modelos-cesped/fortaleza%2050.webp",
+    "name": "Viveza",
+    "slug": "viveza-45mm",
+    "height": "45 mm",
+    "image": "/images/viveza%2045.webp",
     "stats": {
       "density": 3,
       "thickness": 3,
-      "memory": 3,
+      "memory": 4,
       "durability": 3
     }
   },
@@ -67,8 +79,20 @@
     "stats": {
       "density": 3,
       "thickness": 3,
-      "memory": 3,
-      "durability": 3
+      "memory": 4,
+      "durability": 4
+    }
+  },
+  {
+    "name": "Fortaleza",
+    "slug": "fortaleza-50mm",
+    "height": "50 mm",
+    "image": "/images/modelos-cesped/fortaleza%2050.webp",
+    "stats": {
+      "density": 2,
+      "thickness": 4,
+      "memory": 4,
+      "durability": 4
     }
   },
   {
@@ -77,10 +101,10 @@
     "height": "50 mm",
     "image": "/images/modelos-cesped/imperial%2050.webp",
     "stats": {
-      "density": 3,
-      "thickness": 3,
-      "memory": 3,
-      "durability": 3
+      "density": 2,
+      "thickness": 4,
+      "memory": 4,
+      "durability": 4
     }
   },
   {
@@ -89,34 +113,10 @@
     "height": "65 mm",
     "image": "/images/modelos-cesped/imperial%2065.webp",
     "stats": {
-      "density": 3,
-      "thickness": 3,
-      "memory": 3,
-      "durability": 3
-    }
-  },
-  {
-    "name": "Vera Colors",
-    "slug": "vera-colors-25mm",
-    "height": "25 mm",
-    "image": "/images/modelos-cesped/vera%2025.webp",
-    "stats": {
-      "density": 3,
-      "thickness": 3,
-      "memory": 3,
-      "durability": 3
-    }
-  },
-  {
-    "name": "Event",
-    "slug": "event-20mm",
-    "height": "20 mm",
-    "image": "/images/modelos-cesped/event%2020.webp",
-    "stats": {
-      "density": 3,
-      "thickness": 3,
-      "memory": 3,
-      "durability": 3
+      "density": 2,
+      "thickness": 4,
+      "memory": 4,
+      "durability": 4
     }
   }
 ]
