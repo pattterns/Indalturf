@@ -1,17 +1,5 @@
 [
   {
-    "name": "Event",
-    "slug": "event-20mm",
-    "height": "20 mm",
-    "image": "/images/modelos-cesped/event%2020.webp",
-    "stats": {
-      "density": 4,
-      "thickness": 1,
-      "memory": 2,
-      "durability": 3
-    }
-  },
-  {
     "name": "Vera Colors",
     "slug": "vera-colors-25mm",
     "height": "25 mm",
@@ -19,6 +7,18 @@
     "stats": {
       "density": 4,
       "thickness": 2,
+      "memory": 2,
+      "durability": 3
+    }
+  },
+  {
+    "name": "Event",
+    "slug": "event-20mm",
+    "height": "20 mm",
+    "image": "/images/modelos-cesped/event%2020.webp",
+    "stats": {
+      "density": 4,
+      "thickness": 1,
       "memory": 2,
       "durability": 3
     }
