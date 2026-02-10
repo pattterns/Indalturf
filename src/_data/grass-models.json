@@ -6,9 +6,9 @@
       "height": "25 mm",
       "image": "/images/modelos-cesped/vera%2025.webp",
       "stats": {
-        "density": 4,
-        "thickness": 2,
-        "memory": 2,
+        "density": 3,
+        "thickness": 1,
+        "memory": 1,
         "durability": 3
       }
     },
@@ -20,8 +20,8 @@
       "stats": {
         "density": 4,
         "thickness": 1,
-        "memory": 2,
-        "durability": 3
+        "memory": 1,
+        "durability": 2
       }
     },
     {
@@ -54,7 +54,7 @@
       "height": "42 mm",
       "image": "/images/roma%2042.webp",
       "stats": {
-        "density": 3,
+        "density": 4,
         "thickness": 3,
         "memory": 3,
         "durability": 4
@@ -90,8 +90,8 @@
       "height": "50 mm",
       "image": "/images/modelos-cesped/fortaleza%2050.webp",
       "stats": {
-        "density": 2,
-        "thickness": 4,
+        "density": 4,
+        "thickness": 3,
         "memory": 4,
         "durability": 4
       }
@@ -102,7 +102,7 @@
       "height": "50 mm",
       "image": "/images/modelos-cesped/imperial%2050.webp",
       "stats": {
-        "density": 2,
+        "density": 3,
         "thickness": 4,
         "memory": 4,
         "durability": 4
@@ -114,7 +114,7 @@
       "height": "65 mm",
       "image": "/images/modelos-cesped/imperial%2065.webp",
       "stats": {
-        "density": 2,
+        "density": 3,
         "thickness": 4,
         "memory": 4,
         "durability": 4
