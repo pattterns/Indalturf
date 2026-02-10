@@ -6,7 +6,7 @@
       "height": "25 mm",
       "image": "/images/modelos-cesped/vera%2025.webp",
       "stats": {
-        "density": 3,
+        "density": 2,
         "thickness": 1,
         "memory": 1,
         "durability": 3
@@ -18,7 +18,7 @@
       "height": "20 mm",
       "image": "/images/modelos-cesped/event%2020.webp",
       "stats": {
-        "density": 4,
+        "density": 2,
         "thickness": 1,
         "memory": 1,
         "durability": 2
@@ -103,8 +103,8 @@
       "image": "/images/modelos-cesped/imperial%2050.webp",
       "stats": {
         "density": 3,
-        "thickness": 4,
-        "memory": 4,
+        "thickness": 3,
+        "memory": 2,
         "durability": 4
       }
     },
@@ -116,7 +116,7 @@
       "stats": {
         "density": 3,
         "thickness": 4,
-        "memory": 4,
+        "memory": 2,
         "durability": 4
       }
     }
