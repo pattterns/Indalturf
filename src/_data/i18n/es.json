@@ -92,7 +92,7 @@
   "models": {
     "eyebrow": "Nuestros productos",
     "title": "Modelos de césped<br>premium",
-    "subtitle": "Elige de nuestra selección exclusiva de césped artificial premium. Cada modelo diseñado para necesidades y preferencias específicas.",
+    "subtitle": "Escoge entre nuestra selección exclusiva de césped artificial. Cada modelo está pensado y diseñado para necesidades específicas.",
     "height": "Altura",
     "stats": {
       "density": "Densidad",
@@ -200,7 +200,7 @@
     "items": [
       {
         "question": "¿Cuánto dura el césped artificial en el clima de Almería?",
-        "answer": "Nuestro césped artificial premium está específicamente diseñado para climas mediterráneos y viene con protección UV. Con una instalación adecuada y mantenimiento mínimo, puedes esperar 15-20 años de rendimiento óptimo. Todos nuestros productos tienen una garantía del fabricante de 10 años contra degradación UV y defectos de materiales."
+        "answer": "Nuestro césped artificial está específicamente diseñado para climas mediterráneos y viene con protección UV. Con una instalación adecuada y mantenimiento mínimo, puedes esperar 15-20 años de rendimiento óptimo. Todos nuestros productos tienen una garantía del fabricante de 10 años contra degradación UV y defectos de materiales."
       },
       {
         "question": "¿Cuánto cuesta la instalación de césped artificial en Almería?",
@@ -208,7 +208,7 @@
       },
       {
         "question": "¿Es el césped artificial seguro para mascotas y niños?",
-        "answer": "Absolutamente. Nuestro césped artificial está certificado como no tóxico e hipoalergénico, libre de plomo y químicos dañinos. El sistema de drenaje avanzado asegura que la orina de las mascotas drene rápidamente, y la superficie es fácil de limpiar con agua. Las fibras suaves son gentiles con la piel de los niños, y no hay riesgo de barro, pesticidas o alérgenos comunes del césped natural."
+        "answer": "Absolutamente. Nuestro césped artificial está certificado como no tóxico e hipoalergénico y es totalmente seguro para niños y mascotas, fabricado con materiales libres de metales pesados y cumple con las normativas europeas de seguridad.\nEs suave al tacto, no provoca alergias, no pincha y permite un drenaje rápido, evitando charcos y barro. Además, es fácil de limpiar e higienizar, lo que lo convierte en una opción ideal para zonas de juego y espacios donde conviven niños y animales. .  "
       },
       {
         "question": "¿Cuánto tiempo tarda la instalación?",
@@ -216,11 +216,11 @@
       },
       {
         "question": "¿Cubren toda la provincia de Almería?",
-        "answer": "¡Sí! Cubrimos toda la provincia de Almería, zonas costeras como Mojácar, Vera, Garrucha, Carboneras, Níjar, Roquetas de Mar, como zonas más cercanas a la sierra, Macael, Olula, Tijola, Albox, Laujar de Andarax, Tabernas etc. También atendemos a residentes internacionales y propietarios de casas de vacaciones en toda la región de la Almería."
+        "answer": "¡Sí! Cubrimos toda la provincia de Almería, desde zonas costeras como Mojácar, Vera, Garrucha, Carboneras, Níjar, Roquetas de Mar, hasta zonas más cercanas a la sierra, Macael, Olula, Tijola, Albox, Laujar de Andarax, Tabernas etc. También atendemos a residentes internacionales y propietarios de casas de vacaciones en toda la región de la Almería."
       },
       {
         "question": "¿Qué mantenimiento se requiere?",
-        "answer": "¡Prácticamente ninguno! Cepillado ocasional para levantar las fibras y rociado con manguera para eliminar el polvo es todo lo que se necesita. A diferencia del césped natural, no hay corte, riego, fertilización o control de malezas. Recomendamos un simple cepillado cada pocos meses y un enjuague después de días polvorientos. Eso es todo."
+        "answer": "¡Prácticamente ninguno! Cepillado ocasional para levantar las fibras y rociado con manguera para eliminar el polvo es todo lo que se necesita. A diferencia del césped natural, no necesita riego, corte, abonos ni productos químicos, lo que supone un gran ahorro de tiempo y costes, manteniendo siempre un aspecto limpio y cuidado durante todo el año."
       }
     ]
   },
@@ -238,7 +238,7 @@
     "bookConsultation": "Reserva una consulta gratuita"
   },
   "footer": {
-    "tagline": "Instalación de césped artificial premium en toda Almería. Transformando espacios exteriores con calidad, cuidado y experiencia.",
+    "tagline": "Instalación de césped artificial premium en toda Almería. Transformando espacios exteriores con calidad, cuidado y experiencia.\n\n<TU PROYECTO, NUESTRA PRIORIDAD\n",
     "navigation": "Navegación",
     "areas": "Áreas que servimos",
     "contact": "Contacto",
