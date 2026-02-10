@@ -15,8 +15,8 @@ module.exports = function(eleventyConfig) {
   
   // Collection for grass models from JSON
   eleventyConfig.addCollection("grassModels", function(collectionApi) {
-    const models = require("./src/_data/grass-models.json");
-    return models;
+    const data = require("./src/_data/grass-models.json");
+    return data.models;
   });
   
   // Global data for i18n

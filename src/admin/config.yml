@@ -2,93 +2,593 @@ backend:
   name: git-gateway
   branch: main
 
-# For local development, uncomment this:
+# Para desarrollo local, descomentar:
 # local_backend: true
 
 media_folder: "src/images/uploads"
 public_folder: "/images/uploads"
 
+locale: "es"
+
 collections:
-  # Site Configuration
-  - name: "settings"
-    label: "Site Settings"
+  # ═══════════════════════════════════════════
+  # CONFIGURACIÓN GENERAL DEL SITIO
+  # ═══════════════════════════════════════════
+  - name: "configuracion"
+    label: "Configuración del Sitio"
+    description: "Datos generales del sitio: contacto, redes sociales y SEO"
     files:
       - file: "src/_data/site.json"
-        label: "General Settings"
+        label: "Datos Generales"
         name: "site"
         fields:
-          - { label: "Site Title", name: "title", widget: "string" }
-          - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "URL", name: "url", widget: "string" }
-          - { label: "Language", name: "lang", widget: "string", default: "en" }
-          - { label: "Email", name: "email", widget: "string" }
-          - { label: "Phone", name: "phone", widget: "string" }
-          - { label: "Address", name: "address", widget: "string" }
-          - label: "Social Media"
+          - { label: "Nombre del Sitio", name: "title", widget: "string" }
+          - { label: "Eslogan", name: "tagline", widget: "string" }
+          - { label: "Descripción del Sitio", name: "description", widget: "text" }
+          - { label: "URL del Sitio", name: "url", widget: "string", hint: "Ej: https://indalturf.com" }
+          - { label: "Idioma Principal", name: "lang", widget: "hidden", default: "en" }
+          - { label: "Email de Contacto", name: "email", widget: "string" }
+          - { label: "Teléfono", name: "phone", widget: "string", hint: "Con prefijo internacional. Ej: +34 614 051 366" }
+          - { label: "Dirección", name: "address", widget: "string" }
+          - label: "Redes Sociales"
             name: "social"
             widget: "object"
+            collapsed: true
             fields:
-              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
-              - { label: "WhatsApp Number", name: "whatsapp", widget: "string", required: false }
-          - label: "SEO Settings"
+              - { label: "URL de Instagram", name: "instagram", widget: "string", required: false }
+              - { label: "Número de WhatsApp", name: "whatsapp", widget: "string", required: false, hint: "Sin espacios ni guiones. Ej: +34614051366" }
+          - label: "SEO (Posicionamiento Web)"
             name: "seo"
             widget: "object"
+            collapsed: true
             fields:
-              - { label: "Meta Title", name: "title", widget: "string" }
-              - { label: "Meta Description", name: "description", widget: "text" }
-              - { label: "Keywords", name: "keywords", widget: "string" }
+              - { label: "Título para Google", name: "title", widget: "string", hint: "Máximo 60 caracteres recomendado" }
+              - { label: "Descripción para Google", name: "description", widget: "text", hint: "Máximo 160 caracteres recomendado" }
+              - { label: "Palabras Clave", name: "keywords", widget: "string", hint: "Separadas por comas" }
 
-  # Grass Models
-  - name: "grass-models"
-    label: "Grass Models"
-    label_singular: "Grass Model"
-    description: "Manage your artificial grass product catalog"
-    folder: "content/grass-models"
-    create: true
-    slug: "{{slug}}"
-    format: "json"
-    fields:
-      - { label: "Model Name", name: "name", widget: "string" }
-      - { label: "Slug (URL-friendly name)", name: "slug", widget: "string" }
-      - { label: "Height", name: "height", widget: "string", hint: "e.g. 40mm" }
-      - { label: "Price", name: "price", widget: "string", hint: "e.g. €32/m²" }
-      - { label: "Product Image", name: "image", widget: "image" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured", name: "featured", widget: "boolean", default: false }
-      - label: "Stats (1-4 scale)"
-        name: "stats"
-        widget: "object"
-        fields:
-          - { label: "Density", name: "density", widget: "number", min: 1, max: 4, default: 3 }
-          - { label: "Thickness", name: "thickness", widget: "number", min: 1, max: 4, default: 3 }
-          - { label: "Memory", name: "memory", widget: "number", min: 1, max: 4, default: 3 }
-          - { label: "Durability", name: "durability", widget: "number", min: 1, max: 4, default: 3 }
-
-  # JSON Data file for models (alternative approach)
-  - name: "grass-models-json"
-    label: "Grass Models (JSON)"
+  # ═══════════════════════════════════════════
+  # CATÁLOGO DE MODELOS DE CÉSPED
+  # ═══════════════════════════════════════════
+  - name: "modelos"
+    label: "Modelos de Césped"
+    description: "Gestiona el catálogo de modelos de césped artificial"
     files:
       - file: "src/_data/grass-models.json"
-        label: "All Grass Models"
-        name: "models"
-        widget: "list"
+        label: "Catálogo de Modelos"
+        name: "catalogo"
         fields:
-          - { label: "Model Name", name: "name", widget: "string" }
-          - { label: "Slug", name: "slug", widget: "string" }
-          - { label: "Height", name: "height", widget: "string" }
-          - { label: "Price", name: "price", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Featured", name: "featured", widget: "boolean", default: false }
-          - label: "Stats"
+          - label: "Modelos"
+            name: "models"
+            widget: "list"
+            label_singular: "Modelo"
+            summary: "{{fields.name}} — {{fields.height}}"
+            minimize_collapsed: true
+            fields:
+              - { label: "Nombre del Modelo", name: "name", widget: "string", hint: "Ej: Roma, Viveza, Multi Imperial" }
+              - { label: "Slug (nombre para URL)", name: "slug", widget: "string", hint: "Sin espacios, solo minúsculas y guiones. Ej: roma-42mm" }
+              - { label: "Altura", name: "height", widget: "string", hint: "Ej: 42 mm" }
+              - { label: "Imagen del Producto", name: "image", widget: "image" }
+              - label: "Estadísticas (escala 1-4)"
+                name: "stats"
+                widget: "object"
+                fields:
+                  - { label: "Densidad", name: "density", widget: "number", value_type: "int", min: 1, max: 4, default: 3, hint: "1 = baja, 4 = muy alta" }
+                  - { label: "Grosor", name: "thickness", widget: "number", value_type: "int", min: 1, max: 4, default: 3, hint: "1 = fino, 4 = muy grueso" }
+                  - { label: "Memoria", name: "memory", widget: "number", value_type: "int", min: 1, max: 4, default: 3, hint: "1 = baja, 4 = excelente" }
+                  - { label: "Durabilidad", name: "durability", widget: "number", value_type: "int", min: 1, max: 4, default: 3, hint: "1 = básica, 4 = máxima" }
+
+  # ═══════════════════════════════════════════
+  # CONTENIDO EN ESPAÑOL
+  # ═══════════════════════════════════════════
+  - name: "contenido-es"
+    label: "Contenido Español"
+    description: "Todo el contenido de texto de la página en español"
+    files:
+      - file: "src/_data/i18n/es.json"
+        label: "Textos en Español"
+        name: "es"
+        fields:
+          - { label: "Código idioma", name: "lang", widget: "hidden", default: "es" }
+          - { label: "Nombre idioma", name: "langName", widget: "hidden", default: "Español" }
+
+          # ── Navegación ──
+          - label: "Menú de Navegación"
+            name: "nav"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Enlace: Nosotros", name: "about", widget: "string" }
+              - { label: "Enlace: Superficies", name: "surfaces", widget: "string" }
+              - { label: "Enlace: Por qué elegirnos", name: "whyUs", widget: "string" }
+              - { label: "Enlace: Modelos", name: "models", widget: "string" }
+              - { label: "Enlace: Colaboradores", name: "partners", widget: "string" }
+              - { label: "Enlace: FAQ", name: "faq", widget: "string" }
+              - { label: "Botón: Solicitar Presupuesto", name: "getQuote", widget: "string" }
+
+          # ── Hero (Cabecera Principal) ──
+          - label: "Sección Hero (Cabecera)"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "label", widget: "string" }
+              - { label: "Título principal", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - { label: "Texto del botón CTA", name: "cta", widget: "string" }
+              - { label: "Texto sobre la imagen", name: "imageOverlay", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Texto reservar consulta", name: "bookConsultation", widget: "string" }
+
+          # ── Barra de Estadísticas ──
+          - label: "Barra de Estadísticas"
             name: "stats"
             widget: "object"
+            collapsed: true
             fields:
-              - { label: "Density (1-4)", name: "density", widget: "number", min: 1, max: 4 }
-              - { label: "Thickness (1-4)", name: "thickness", widget: "number", min: 1, max: 4 }
-              - { label: "Memory (1-4)", name: "memory", widget: "number", min: 1, max: 4 }
-              - { label: "Durability (1-4)", name: "durability", widget: "number", min: 1, max: 4 }
+              - { label: "Etiqueta: Años experiencia", name: "experience", widget: "string" }
+              - { label: "Etiqueta: Proyectos", name: "projects", widget: "string" }
+              - { label: "Etiqueta: m² instalados", name: "installed", widget: "string" }
+              - { label: "Etiqueta: Garantía", name: "warranty", widget: "string" }
+              - { label: "Valor de garantía", name: "warrantyValue", widget: "string" }
 
+          # ── Sobre Nosotros ──
+          - label: "Sección Sobre Nosotros"
+            name: "about"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Texto destacado (lead)", name: "lead", widget: "text" }
+              - { label: "Texto descriptivo", name: "text", widget: "text" }
+              - label: "Valores de la empresa"
+                name: "values"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - label: "Valor: Confianza"
+                    name: "trust"
+                    widget: "object"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Descripción", name: "text", widget: "string" }
+                  - label: "Valor: Excelencia"
+                    name: "excellence"
+                    widget: "object"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Descripción", name: "text", widget: "string" }
+                  - label: "Valor: Sostenibilidad"
+                    name: "sustainability"
+                    widget: "object"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Descripción", name: "text", widget: "string" }
+              - label: "Garantías de calidad"
+                name: "guarantees"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Título de la sección", name: "title", widget: "string" }
+                  - label: "Elementos de garantía"
+                    name: "items"
+                    widget: "list"
+                    summary: "{{fields.num}} — {{fields.title}}"
+                    fields:
+                      - { label: "Número", name: "num", widget: "string", hint: "Ej: 01, 02, 03..." }
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Descripción", name: "text", widget: "string" }
 
+          # ── Superficies de Instalación ──
+          - label: "Sección Superficies"
+            name: "surfaces"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - label: "Tipos de superficie"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Nombre", name: "name", widget: "string" }
+                  - { label: "Nombre del archivo de imagen", name: "image", widget: "string", hint: "Nombre del archivo en /images/. Ej: gardens.webp" }
 
+          # ── Por Qué Elegirnos ──
+          - label: "Sección Por Qué Elegirnos"
+            name: "whyUs"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - label: "Tarjetas de características"
+                name: "features"
+                widget: "list"
+                summary: "{{fields.type}}: {{fields.title}}{{fields.number}}"
+                minimize_collapsed: true
+                fields:
+                  - label: "Tipo de tarjeta"
+                    name: "type"
+                    widget: "select"
+                    options:
+                      - { label: "Con imagen", value: "image" }
+                      - { label: "Estadística destacada", value: "stat" }
+                      - { label: "Horizontal con imagen", value: "horizontal" }
+                      - { label: "Solo texto con icono", value: "text" }
+                    hint: "Define el diseño visual de la tarjeta"
+                  - { label: "Título", name: "title", widget: "string", required: false }
+                  - { label: "Texto descriptivo", name: "text", widget: "string", required: false }
+                  - { label: "Imagen (nombre de archivo)", name: "image", widget: "string", required: false, hint: "Solo para tipos 'Con imagen' y 'Horizontal'. Ej: surface-pool.webp" }
+                  - { label: "Número/Estadística", name: "number", widget: "string", required: false, hint: "Solo para tipo 'Estadística'. Ej: 0L, 500€+" }
+                  - { label: "Etiqueta de la estadística", name: "label", widget: "string", required: false, hint: "Solo para tipo 'Estadística'. Usa <br> para saltos de línea" }
+                  - { label: "Fondo oscuro", name: "dark", widget: "boolean", required: false, default: false, hint: "Solo para tipo 'Estadística'" }
+                  - { label: "Icono", name: "icon", widget: "string", required: false, hint: "Solo para tipo 'Solo texto'. Valores: shield, language" }
+
+          # ── Sección de Confianza ──
+          - label: "Sección de Confianza"
+            name: "trust"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Texto", name: "text", widget: "text" }
+
+          # ── Etiquetas de la Sección Modelos ──
+          - label: "Sección Modelos (solo etiquetas)"
+            name: "models"
+            widget: "object"
+            collapsed: true
+            summary: "Títulos y etiquetas de la sección de modelos"
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - { label: "Texto 'Altura'", name: "height", widget: "string" }
+              - label: "Etiquetas de estadísticas"
+                name: "stats"
+                widget: "object"
+                fields:
+                  - { label: "Densidad", name: "density", widget: "string" }
+                  - { label: "Grosor", name: "thickness", widget: "string" }
+                  - { label: "Memoria", name: "memory", widget: "string" }
+                  - { label: "Durabilidad", name: "durability", widget: "string" }
+
+          # ── Colaboradores ──
+          - label: "Sección Colaboradores"
+            name: "partners"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Texto de introducción", name: "intro", widget: "text" }
+              - label: "Lista de colaboradores"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Nombre de la empresa", name: "name", widget: "string" }
+                  - { label: "Descripción", name: "description", widget: "text" }
+                  - { label: "Logo (nombre de archivo)", name: "logo", widget: "string", hint: "Nombre del archivo en /images/. Ej: partner-ibercesped.svg" }
+                  - { label: "URL de la web", name: "url", widget: "string" }
+
+          # ── Preguntas Frecuentes ──
+          - label: "Preguntas Frecuentes (FAQ)"
+            name: "faq"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - label: "Preguntas y respuestas"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.question}}"
+                fields:
+                  - { label: "Pregunta", name: "question", widget: "string" }
+                  - { label: "Respuesta", name: "answer", widget: "text" }
+
+          # ── Formulario de Contacto / CTA ──
+          - label: "Formulario de Contacto"
+            name: "cta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Subtítulo", name: "subtitle", widget: "string" }
+              - { label: "Placeholder: Nombre", name: "namePlaceholder", widget: "string" }
+              - { label: "Placeholder: Email", name: "emailPlaceholder", widget: "string" }
+              - { label: "Placeholder: Teléfono", name: "phonePlaceholder", widget: "string" }
+              - { label: "Placeholder: Código postal", name: "postalCodePlaceholder", widget: "string" }
+              - { label: "Etiqueta: Tipo de instalación", name: "installationTypeLabel", widget: "string" }
+              - { label: "Placeholder: Tipo de instalación", name: "installationTypePlaceholder", widget: "string" }
+              - label: "Tipos de instalación (opciones del desplegable)"
+                name: "installationTypes"
+                widget: "list"
+              - { label: "Placeholder: Metros cuadrados", name: "squareMetersPlaceholder", widget: "string" }
+              - { label: "Texto del botón de envío", name: "button", widget: "string" }
+              - { label: "Mensaje de éxito", name: "successMessage", widget: "string" }
+
+          # ── Pie de Página ──
+          - label: "Pie de Página (Footer)"
+            name: "footer"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eslogan del footer", name: "tagline", widget: "text" }
+              - { label: "Título sección navegación", name: "navigation", widget: "string" }
+              - { label: "Título sección áreas", name: "areas", widget: "string" }
+              - { label: "Título sección contacto", name: "contact", widget: "string" }
+              - label: "Áreas que servimos"
+                name: "areasServed"
+                widget: "list"
+              - { label: "Ubicación", name: "location", widget: "string" }
+              - { label: "Texto de copyright", name: "copyright", widget: "string" }
+
+          # ── WhatsApp ──
+          - label: "Botón WhatsApp"
+            name: "whatsapp"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Texto del botón", name: "text", widget: "string" }
+
+  # ═══════════════════════════════════════════
+  # CONTENIDO EN INGLÉS
+  # ═══════════════════════════════════════════
+  - name: "contenido-en"
+    label: "Contenido Inglés"
+    description: "Todo el contenido de texto de la página en inglés"
+    files:
+      - file: "src/_data/i18n/en.json"
+        label: "Textos en Inglés"
+        name: "en"
+        fields:
+          - { label: "Código idioma", name: "lang", widget: "hidden", default: "en" }
+          - { label: "Nombre idioma", name: "langName", widget: "hidden", default: "English" }
+
+          # ── Navegación ──
+          - label: "Menú de Navegación"
+            name: "nav"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Enlace: About", name: "about", widget: "string" }
+              - { label: "Enlace: Surfaces", name: "surfaces", widget: "string" }
+              - { label: "Enlace: Why Us", name: "whyUs", widget: "string" }
+              - { label: "Enlace: Models", name: "models", widget: "string" }
+              - { label: "Enlace: Partners", name: "partners", widget: "string" }
+              - { label: "Enlace: FAQ", name: "faq", widget: "string" }
+              - { label: "Botón: Get Quote", name: "getQuote", widget: "string" }
+
+          # ── Hero ──
+          - label: "Sección Hero (Cabecera)"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "label", widget: "string" }
+              - { label: "Título principal", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - { label: "Texto del botón CTA", name: "cta", widget: "string" }
+              - { label: "Texto sobre la imagen", name: "imageOverlay", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Texto reservar consulta", name: "bookConsultation", widget: "string" }
+
+          # ── Barra de Estadísticas ──
+          - label: "Barra de Estadísticas"
+            name: "stats"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta: Years experience", name: "experience", widget: "string" }
+              - { label: "Etiqueta: Projects", name: "projects", widget: "string" }
+              - { label: "Etiqueta: m² installed", name: "installed", widget: "string" }
+              - { label: "Etiqueta: Warranty", name: "warranty", widget: "string" }
+              - { label: "Valor de garantía", name: "warrantyValue", widget: "string" }
+
+          # ── Sobre Nosotros ──
+          - label: "Sección About Us"
+            name: "about"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Texto destacado (lead)", name: "lead", widget: "text" }
+              - { label: "Texto descriptivo", name: "text", widget: "text" }
+              - label: "Valores de la empresa"
+                name: "values"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - label: "Valor: Trust"
+                    name: "trust"
+                    widget: "object"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Descripción", name: "text", widget: "string" }
+                  - label: "Valor: Excellence"
+                    name: "excellence"
+                    widget: "object"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Descripción", name: "text", widget: "string" }
+                  - label: "Valor: Sustainability"
+                    name: "sustainability"
+                    widget: "object"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Descripción", name: "text", widget: "string" }
+              - label: "Garantías de calidad"
+                name: "guarantees"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Título de la sección", name: "title", widget: "string" }
+                  - label: "Elementos de garantía"
+                    name: "items"
+                    widget: "list"
+                    summary: "{{fields.num}} — {{fields.title}}"
+                    fields:
+                      - { label: "Número", name: "num", widget: "string" }
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Descripción", name: "text", widget: "string" }
+
+          # ── Superficies ──
+          - label: "Sección Surfaces"
+            name: "surfaces"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - label: "Tipos de superficie"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Nombre", name: "name", widget: "string" }
+                  - { label: "Nombre del archivo de imagen", name: "image", widget: "string", hint: "Nombre del archivo en /images/. Ej: gardens.webp" }
+
+          # ── Why Us ──
+          - label: "Sección Why Us"
+            name: "whyUs"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - label: "Tarjetas de características"
+                name: "features"
+                widget: "list"
+                summary: "{{fields.type}}: {{fields.title}}{{fields.number}}"
+                minimize_collapsed: true
+                fields:
+                  - label: "Tipo de tarjeta"
+                    name: "type"
+                    widget: "select"
+                    options:
+                      - { label: "Con imagen", value: "image" }
+                      - { label: "Estadística destacada", value: "stat" }
+                      - { label: "Horizontal con imagen", value: "horizontal" }
+                      - { label: "Solo texto con icono", value: "text" }
+                  - { label: "Título", name: "title", widget: "string", required: false }
+                  - { label: "Texto descriptivo", name: "text", widget: "string", required: false }
+                  - { label: "Imagen (nombre de archivo)", name: "image", widget: "string", required: false, hint: "Solo para tipos 'Con imagen' y 'Horizontal'" }
+                  - { label: "Número/Estadística", name: "number", widget: "string", required: false, hint: "Solo para tipo 'Estadística'" }
+                  - { label: "Etiqueta de la estadística", name: "label", widget: "string", required: false, hint: "Solo para tipo 'Estadística'" }
+                  - { label: "Fondo oscuro", name: "dark", widget: "boolean", required: false, default: false }
+                  - { label: "Icono", name: "icon", widget: "string", required: false, hint: "Solo para tipo 'Solo texto'" }
+
+          # ── Trust ──
+          - label: "Sección de Confianza"
+            name: "trust"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Texto", name: "text", widget: "text" }
+
+          # ── Models Section Labels ──
+          - label: "Sección Modelos (solo etiquetas)"
+            name: "models"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - { label: "Texto 'Height'", name: "height", widget: "string" }
+              - label: "Etiquetas de estadísticas"
+                name: "stats"
+                widget: "object"
+                fields:
+                  - { label: "Density", name: "density", widget: "string" }
+                  - { label: "Thickness", name: "thickness", widget: "string" }
+                  - { label: "Memory", name: "memory", widget: "string" }
+                  - { label: "Durability", name: "durability", widget: "string" }
+
+          # ── Partners ──
+          - label: "Sección Partners"
+            name: "partners"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Texto de introducción", name: "intro", widget: "text" }
+              - label: "Lista de colaboradores"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Nombre de la empresa", name: "name", widget: "string" }
+                  - { label: "Descripción", name: "description", widget: "text" }
+                  - { label: "Logo (nombre de archivo)", name: "logo", widget: "string" }
+                  - { label: "URL de la web", name: "url", widget: "string" }
+
+          # ── FAQ ──
+          - label: "Preguntas Frecuentes (FAQ)"
+            name: "faq"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Etiqueta superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string", hint: "Usa <br> para saltos de línea" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - label: "Preguntas y respuestas"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.question}}"
+                fields:
+                  - { label: "Pregunta", name: "question", widget: "string" }
+                  - { label: "Respuesta", name: "answer", widget: "text" }
+
+          # ── CTA / Contact Form ──
+          - label: "Formulario de Contacto"
+            name: "cta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Subtítulo", name: "subtitle", widget: "string" }
+              - { label: "Placeholder: Name", name: "namePlaceholder", widget: "string" }
+              - { label: "Placeholder: Email", name: "emailPlaceholder", widget: "string" }
+              - { label: "Placeholder: Phone", name: "phonePlaceholder", widget: "string" }
+              - { label: "Placeholder: Postal code", name: "postalCodePlaceholder", widget: "string" }
+              - { label: "Etiqueta: Installation type", name: "installationTypeLabel", widget: "string" }
+              - { label: "Placeholder: Installation type", name: "installationTypePlaceholder", widget: "string" }
+              - label: "Tipos de instalación (opciones del desplegable)"
+                name: "installationTypes"
+                widget: "list"
+              - { label: "Placeholder: Square meters", name: "squareMetersPlaceholder", widget: "string" }
+              - { label: "Texto del botón de envío", name: "button", widget: "string" }
+              - { label: "Mensaje de éxito", name: "successMessage", widget: "string" }
+
+          # ── Footer ──
+          - label: "Pie de Página (Footer)"
+            name: "footer"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eslogan del footer", name: "tagline", widget: "text" }
+              - { label: "Título sección navegación", name: "navigation", widget: "string" }
+              - { label: "Título sección áreas", name: "areas", widget: "string" }
+              - { label: "Título sección contacto", name: "contact", widget: "string" }
+              - label: "Áreas que servimos"
+                name: "areasServed"
+                widget: "list"
+              - { label: "Ubicación", name: "location", widget: "string" }
+              - { label: "Texto de copyright", name: "copyright", widget: "string" }
+
+          # ── WhatsApp ──
+          - label: "Botón WhatsApp"
+            name: "whatsapp"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Texto del botón", name: "text", widget: "string" }
