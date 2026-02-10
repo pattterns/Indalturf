@@ -92,7 +92,7 @@
   "models": {
     "eyebrow": "Nuestros productos",
     "title": "Modelos de césped<br>",
-    "subtitle": "Escoge entre nuestra selección exclusiva de césped artificial el modelo que mejor se adapta a tu estilo de vida. Cada espacio es único, tenemos el césped perfecto para el tuyo.",
+    "subtitle": "Escoge entre nuestra gama de césped artificial el modelo que mejor se adapta a tu estilo de vida. Cada espacio es único, tenemos el césped perfecto para el tuyo.",
     "height": "Altura",
     "stats": {
       "density": "Densidad",
@@ -171,7 +171,7 @@
     "successMessage": "¡Solicitud recibida! Te contactaremos lo antes posible.",
     "phonePlaceholder": "Teléfono",
     "namePlaceholder": "Nombre y apellidos",
-    "squareMetersPlaceholder": "Metros cuadrados aproximados",
+    "squareMetersPlaceholder": "Déjanos tu mensaje",
     "button": "Solicitar presupuesto gratuito",
     "emailPlaceholder": "Tu dirección de email",
     "subtitle": "Obtén un presupuesto gratuito y sin compromiso. Respondemos en 24 horas.",
