@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: YOUR_USERNAME/indalturf  # Change to your GitHub repo
+  name: git-gateway
   branch: main
 
 # For local development, uncomment this:
