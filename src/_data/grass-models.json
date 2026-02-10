@@ -119,18 +119,6 @@
         "memory": 4,
         "durability": 4
       }
-    },
-    {
-      "stats": {
-        "density": 3,
-        "thickness": 3,
-        "memory": 3,
-        "durability": 3
-      },
-      "name": "test",
-      "slug": "test",
-      "height": "55",
-      "image": "/images/uploads/kit-suelo-blanco-1-.png"
     }
   ]
 }
