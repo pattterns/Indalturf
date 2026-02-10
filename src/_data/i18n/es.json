@@ -91,8 +91,8 @@
   },
   "models": {
     "eyebrow": "Nuestros productos",
-    "title": "Modelos de césped<br>premium",
-    "subtitle": "Escoge entre nuestra selección exclusiva de césped artificial. Cada modelo está pensado y diseñado para necesidades específicas.",
+    "title": "Modelos de césped<br>",
+    "subtitle": "Escoge entre nuestra selección exclusiva de césped artificial el modelo que mejor se adapta a tu espacio uso y estilo de vida. Cada espacio es único, tenemos el césped perfecto para el tuyo.",
     "height": "Altura",
     "stats": {
       "density": "Densidad",
@@ -123,8 +123,8 @@
   "about": {
     "eyebrow": "Sobre nosotros",
     "title": "La excelencia vive<br>en los detalles.",
-    "lead": "Indalturf es un equipo de profesionales apasionados especializados en la instalación de césped artificial premium en toda Almería.",
-    "text": "Combinamos soluciones innovadoras con artesanía meticulosa para crear espacios exteriores sostenibles, hermosos y duraderos.",
+    "lead": "Indalturf es un equipo de profesionales especializados en la instalación de césped artificial de alta calidad en toda Almería.",
+    "text": "Combinamos soluciones innovadoras con una metodología propia para crear espacios exteriores sostenibles, hermosos y duraderos.",
     "values": {
       "trust": {
         "title": "Confianza",
@@ -225,8 +225,8 @@
     ]
   },
   "trust": {
-    "title": "Confianza de propietarios<br>en toda la Costa de Almería",
-    "text": "Imagina despertarte en un jardín verde y exuberante todos los días. Visualiza a tus hijos jugando descalzos sobre césped suave y seguro. Imagina celebrar reuniones inolvidables con amigos, sin preocuparte por el mantenimiento. Bienvenido a casa, a un estilo de vida donde la belleza exterior se encuentra con la vida sin esfuerzo."
+    "title": "La elección <br> de quienes confían en IndalTurf en Almería",
+    "text": "Imagina despertarte en un jardín verde y cuidado todos los días. Visualiza a tus hijos jugando descalzos sobre césped suave, cómodo y seguro. Piensa en celebrar reuniones inolvidables con amigos, barbacoas y momentos inolvidables sin preocuparte por el mantenimiento. Bienvenido a casa, a IndalTurf, a un estilo de vida pensado, para disfrutar todo el año, con la tranquilidad de saber que has elegido una solución duradera y de calidad para tu hogar."
   },
   "langName": "Español",
   "hero": {
