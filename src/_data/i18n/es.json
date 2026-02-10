@@ -1,6 +1,4 @@
 {
-  "lang": "es",
-  "langName": "Español",
   "nav": {
     "about": "Nosotros",
     "surfaces": "Superficies",
@@ -10,20 +8,117 @@
     "faq": "Preguntas",
     "getQuote": "Solicitar presupuesto"
   },
-  "hero": {
-    "label": "Expertos en césped artificial premium en Almería",
-    "title": "Transforma tu espacio<br>con césped premium.",
-    "subtitle": "Instalación profesional, materiales certificados europeos y garantía de 10 años. Tu jardín merece lo mejor.",
-    "cta": "Comenzar",
-    "imageOverlay": "El camino hacia un<br>jardín perfecto.",
-    "bookConsultation": "Reserva una consulta gratuita"
+  "whyUs": {
+    "eyebrow": "Por qué elegirnos",
+    "title": "La elección correcta para<br>césped artificial en Almería",
+    "features": [
+      {
+        "type": "image",
+        "title": "Clima mediterráneo",
+        "text": "Nuestros productos están especialmente seleccionados para el sol intenso y las condiciones secas de Almería.",
+        "image": "surface-pool.webp"
+      },
+      {
+        "type": "stat",
+        "number": "0L",
+        "label": "Agua necesaria<br>al año",
+        "dark": true
+      },
+      {
+        "type": "horizontal",
+        "title": "Apto para mascotas",
+        "text": "Seguro, no tóxico, fácil de limpiar, perfecto para tus amigos peludos.",
+        "image": "pet-friendly.webp"
+      },
+      {
+        "type": "text",
+        "icon": "shield",
+        "title": "Garantía de 10 años",
+        "text": "Respaldado por fabricantes europeos"
+      },
+      {
+        "type": "stat",
+        "number": "500€+",
+        "label": "Ahorro anual",
+        "dark": true
+      },
+      {
+        "type": "text",
+        "icon": "language",
+        "title": "Hablamos inglés",
+        "text": "Comunicación clara, sin barreras"
+      }
+    ]
   },
-  "stats": {
-    "experience": "Años de experiencia",
-    "projects": "Proyectos completados",
-    "installed": "m² instalados",
-    "warranty": "Garantía de producto",
-    "warrantyValue": "10 años"
+  "surfaces": {
+    "eyebrow": "Superficies de instalación",
+    "title": "Instalamos en<br>cualquier superficie",
+    "subtitle": "Desde patios de hormigón hasta terrenos naturales, nuestro equipo experto transforma cualquier espacio en un hermoso oasis verde.",
+    "items": [
+      {
+        "name": "Jardines",
+        "image": "gardens.webp"
+      },
+      {
+        "name": "Zonas de piscina",
+        "image": "pool-areas.webp"
+      },
+      {
+        "name": "Terrazas",
+        "image": "terraces.webp"
+      },
+      {
+        "name": "Comunidades",
+        "image": "surface-pool.webp"
+      },
+      {
+        "name": "Pistas deportivas",
+        "image": "sports.webp"
+      },
+      {
+        "name": "Eventos y empresas",
+        "image": "events-business.webp"
+      },
+      {
+        "name": "Parques infantiles",
+        "image": "playgrounds.webp"
+      },
+      {
+        "name": "Obras públicas",
+        "image": "public-works.webp"
+      }
+    ]
+  },
+  "models": {
+    "eyebrow": "Nuestros productos",
+    "title": "Modelos de césped<br>premium",
+    "subtitle": "Elige de nuestra selección exclusiva de césped artificial premium. Cada modelo diseñado para necesidades y preferencias específicas.",
+    "height": "Altura",
+    "stats": {
+      "density": "Densidad",
+      "thickness": "Grosor",
+      "memory": "Memoria",
+      "durability": "Durabilidad"
+    }
+  },
+  "partners": {
+    "eyebrow": "Nuestros colaboradores",
+    "title": "Trabajamos con los<br>mejores del sector",
+    "intro": "En IndalTurf trabajamos junto a fabricantes y distribuidores reconocidos de césped artificial, aportando nuestra experiencia como empresa instaladora especializada. Estas empresas confían en nosotros para llevar a cabo instalaciones que cumplen los estándares técnicos del producto.",
+    "items": [
+      {
+        "name": "Ibercésped",
+        "description": "Empresa referente en césped artificial de alta calidad. IndalTurf colabora como instalador profesional, garantizando una colocación correcta, duradera y adaptada a cada espacio.",
+        "logo": "partner-ibercesped.svg",
+        "url": "https://ibercesped.com/"
+      },
+      {
+        "name": "Césped Express",
+        "description": "Distribuidor especializado en soluciones de césped artificial para jardines, terrazas y zonas deportivas.",
+        "logo": "partner-cesped-express.png",
+        "url": "https://cespedartificial.madrid/"
+      }
+    ]
   },
   "about": {
     "eyebrow": "Sobre nosotros",
@@ -70,97 +165,33 @@
       ]
     }
   },
-  "surfaces": {
-    "eyebrow": "Superficies de instalación",
-    "title": "Instalamos en<br>cualquier superficie",
-    "subtitle": "Desde patios de hormigón hasta terrenos naturales, nuestro equipo experto transforma cualquier espacio en un hermoso oasis verde.",
-    "items": [
-      { "name": "Jardines", "image": "gardens.webp" },
-      { "name": "Zonas de piscina", "image": "pool-areas.webp" },
-      { "name": "Terrazas", "image": "terraces.webp" },
-      { "name": "Comunidades", "image": "surface-pool.webp" },
-      { "name": "Pistas deportivas", "image": "sports.webp" },
-      { "name": "Eventos y empresas", "image": "events-business.webp" },
-      { "name": "Parques infantiles", "image": "playgrounds.webp" },
-      { "name": "Obras públicas", "image": "public-works.webp" }
+  "lang": "es",
+  "cta": {
+    "installationTypeLabel": "¿Dónde quieres instalar el césped artificial?",
+    "successMessage": "¡Solicitud recibida! Te contactaremos lo antes posible.",
+    "phonePlaceholder": "Teléfono",
+    "namePlaceholder": "Nombre y apellidos",
+    "squareMetersPlaceholder": "Metros cuadrados aproximados",
+    "button": "Solicitar presupuesto gratuito",
+    "emailPlaceholder": "Tu dirección de email",
+    "subtitle": "Obtén un presupuesto gratuito y sin compromiso. Respondemos en 24 horas.",
+    "title": "¿Listo para transformar tu espacio exterior?",
+    "postalCodePlaceholder": "Código postal",
+    "installationTypePlaceholder": "¿Dónde quieres el césped?",
+    "installationTypes": [
+      "Jardín",
+      "Zona de piscina",
+      "Terraza",
+      "Comunidad",
+      "Pista deportiva",
+      "Eventos y empresas",
+      "Parque infantil",
+      "Obra pública",
+      "Otro"
     ]
   },
-  "whyUs": {
-    "eyebrow": "Por qué elegirnos",
-    "title": "La elección correcta para<br>césped artificial en Almería",
-    "features": [
-      {
-        "type": "image",
-        "title": "Clima mediterráneo",
-        "text": "Nuestros productos están especialmente seleccionados para el sol intenso y las condiciones secas de Almería.",
-        "image": "surface-pool.webp"
-      },
-      {
-        "type": "stat",
-        "number": "0L",
-        "label": "Agua necesaria<br>al año",
-        "dark": true
-      },
-      {
-        "type": "horizontal",
-        "title": "Apto para mascotas",
-        "text": "Seguro, no tóxico, fácil de limpiar, perfecto para tus amigos peludos.",
-        "image": "pet-friendly.webp"
-      },
-      {
-        "type": "text",
-        "icon": "shield",
-        "title": "Garantía de 10 años",
-        "text": "Respaldado por fabricantes europeos"
-      },
-      {
-        "type": "stat",
-        "number": "500€+",
-        "label": "Ahorro anual",
-        "dark": true
-      },
-      {
-        "type": "text",
-        "icon": "language",
-        "title": "Hablamos inglés",
-        "text": "Comunicación clara, sin barreras"
-      }
-    ]
-  },
-  "trust": {
-    "title": "Confianza de propietarios<br>en toda la Costa de Almería",
-    "text": "Imagina despertarte con un jardín verde y exuberante todos los días. Visualiza a tus hijos jugando descalzos sobre césped suave y seguro. Imagina celebrar reuniones inolvidables con amigos, sin preocuparte por el mantenimiento. Bienvenido a casa, a un estilo de vida donde la belleza exterior se encuentra con la vida sin esfuerzo."
-  },
-  "models": {
-    "eyebrow": "Nuestros productos",
-    "title": "Modelos de césped<br>premium",
-    "subtitle": "Elige de nuestra selección exclusiva de césped artificial premium. Cada modelo diseñado para necesidades y preferencias específicas.",
-    "height": "Altura",
-    "stats": {
-      "density": "Densidad",
-      "thickness": "Grosor",
-      "memory": "Memoria",
-      "durability": "Durabilidad"
-    }
-  },
-  "partners": {
-    "eyebrow": "Nuestros colaboradores",
-    "title": "Trabajamos con los<br>mejores del sector",
-    "intro": "En IndalTurf trabajamos junto a fabricantes y distribuidores reconocidos de césped artificial, aportando nuestra experiencia como empresa instaladora especializada. Estas empresas confían en nosotros para llevar a cabo instalaciones que cumplen los estándares técnicos del producto.",
-    "items": [
-      {
-        "name": "Ibercésped",
-        "description": "Empresa referente en césped artificial de alta calidad. IndalTurf colabora como instalador profesional, garantizando una colocación correcta, duradera y adaptada a cada espacio.",
-        "logo": "partner-ibercesped.svg",
-        "url": "https://ibercesped.com/"
-      },
-      {
-        "name": "Césped Express",
-        "description": "Distribuidor especializado en soluciones de césped artificial para jardines, terrazas y zonas deportivas.",
-        "logo": "partner-cesped-express.png",
-        "url": "https://cespedartificial.madrid/"
-      }
-    ]
+  "whatsapp": {
+    "text": "WhatsApp"
   },
   "faq": {
     "eyebrow": "Preguntas frecuentes",
@@ -193,29 +224,18 @@
       }
     ]
   },
-  "cta": {
-    "title": "¿Listo para transformar tu espacio exterior?",
-    "subtitle": "Obtén un presupuesto gratuito y sin compromiso. Respondemos en 24 horas.",
-    "namePlaceholder": "Nombre y apellidos",
-    "emailPlaceholder": "Tu dirección de email",
-    "phonePlaceholder": "Teléfono",
-    "postalCodePlaceholder": "Código postal",
-    "installationTypeLabel": "¿Dónde quieres instalar el césped artificial?",
-    "installationTypePlaceholder": "¿Dónde quieres el césped?",
-    "installationTypes": [
-      "Jardín",
-      "Zona de piscina",
-      "Terraza",
-      "Comunidad",
-      "Pista deportiva",
-      "Eventos y empresas",
-      "Parque infantil",
-      "Obra pública",
-      "Otro"
-    ],
-    "squareMetersPlaceholder": "Metros cuadrados aproximados",
-    "button": "Solicitar presupuesto gratuito",
-    "successMessage": "¡Solicitud recibida! Te contactaremos lo antes posible."
+  "trust": {
+    "title": "Confianza de propietarios<br>en toda la Costa de Almería",
+    "text": "Imagina despertarte en un jardín verde y exuberante todos los días. Visualiza a tus hijos jugando descalzos sobre césped suave y seguro. Imagina celebrar reuniones inolvidables con amigos, sin preocuparte por el mantenimiento. Bienvenido a casa, a un estilo de vida donde la belleza exterior se encuentra con la vida sin esfuerzo."
+  },
+  "langName": "Español",
+  "hero": {
+    "label": "Expertos en césped artificial premium en Almería",
+    "title": "Transforma tu espacio<br>con césped premium.",
+    "subtitle": "Instalación profesional, materiales certificados europeos y garantía de 10 años. Tu jardín merece lo mejor.",
+    "cta": "Comenzar",
+    "imageOverlay": "El camino hacia un<br>jardín perfecto.",
+    "bookConsultation": "Reserva una consulta gratuita"
   },
   "footer": {
     "tagline": "Instalación de césped artificial premium en toda Almería. Transformando espacios exteriores con calidad, cuidado y experiencia.",
@@ -236,8 +256,11 @@
     "location": "Almería, España",
     "copyright": "© 2025 Indalturf. Todos los derechos reservados."
   },
-  "whatsapp": {
-    "text": "WhatsApp"
+  "stats": {
+    "experience": "Años de experiencia",
+    "projects": "Proyectos completados",
+    "installed": "m² instalados",
+    "warranty": "Garantía de producto",
+    "warrantyValue": "10 años"
   }
 }
-
