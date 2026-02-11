@@ -234,7 +234,7 @@ module.exports = class {
     </div>
     
     <!-- Surfaces Slider -->
-    <div class="surfaces-slider" id="surfacesSlider">
+    <div class="surfaces-slider" id="surfacesSlider" data-lenis-prevent-wheel>
         <div class="surfaces-track" id="surfacesTrack">
             ${i18n.surfaces.items.map((surface, index) => {
               const offsetClass = index % 2 === 1 ? ' surface-card-offset' : '';

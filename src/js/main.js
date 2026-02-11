@@ -9,6 +9,34 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('js-loaded');
     
     // ============================================
+    // Lenis Smooth Scroll Initialization
+    // ============================================
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        orientation: 'vertical',
+        gestureOrientation: 'vertical',
+        smoothWheel: true,
+        wheelMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false
+    });
+    
+    // Request Animation Frame loop for Lenis
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    
+    requestAnimationFrame(raf);
+    
+    // Optional: Log scroll events (remove in production if not needed)
+    // lenis.on('scroll', (e) => {
+    //     console.log('Lenis scroll:', e);
+    // });
+    
+    // ============================================
     // Scroll Progress Indicator
     // ============================================
     const scrollProgress = document.getElementById('scrollProgress');
@@ -67,11 +95,15 @@ document.addEventListener('DOMContentLoaded', function() {
     function openMobileMenu() {
         mobileMenu.classList.add('active');
         document.body.style.overflow = 'hidden';
+        // Stop Lenis when mobile menu is open
+        lenis.stop();
     }
     
     function closeMobileMenu() {
         mobileMenu.classList.remove('active');
         document.body.style.overflow = '';
+        // Resume Lenis when mobile menu is closed
+        lenis.start();
     }
     
     if (navbarToggle) {
@@ -87,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ============================================
-    // Smooth Scroll for Anchor Links
+    // Smooth Scroll for Anchor Links (with Lenis)
     // ============================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -99,12 +131,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
                 closeMobileMenu();
                 
-                const navbarHeight = navbar.offsetHeight;
+                const navbarHeight = navbar ? navbar.offsetHeight : 0;
                 const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight - 20;
                 
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
+                // Use Lenis smooth scroll instead of native
+                lenis.scrollTo(targetPosition, {
+                    duration: 1.5,
+                    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
                 });
             }
         });
