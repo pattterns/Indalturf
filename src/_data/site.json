@@ -1,19 +1,19 @@
 {
+  "title": "Indalturf",
+  "tagline": "Césped Artificial Premium en Almería",
+  "description": "Instalación profesional de césped artificial en Almería. Transforma tu espacio exterior con césped de máxima calidad, instalación profesional y garantía de 10 años.",
+  "url": "https://indalturf.com",
+  "lang": "es",
+  "email": "info@indalturf.com",
+  "phone": "+34 614 051 366",
+  "address": "Almería, España",
   "social": {
     "instagram": "https://instagram.com/indalturf",
     "whatsapp": "+34614051366"
   },
-  "phone": "+34 614 051 366",
-  "lang": "en",
-  "tagline": "Césped artificial de calidad en Almería ",
-  "url": "https://indalturf.com",
-  "address": "Almería, Spain",
-  "title": "Indalturf",
-  "email": "info@indalturf.com",
-  "description": "Instalación de césped artificial en Almería. Jardines, terrazas y pistas deportivas con acabados profesionales y presupuesto sin compromiso.",
   "seo": {
-    "title": "Indalturf | Premium Artificial Grass Installation in Almería",
-    "description": "Transform your outdoor space with Indalturf. Expert artificial grass installation in Almería, Costa de Almería & surrounding areas. Premium quality, professional service, 10-year warranty.",
-    "keywords": "artificial grass Almería, artificial turf installation Spain, premium artificial grass, garden turf Almería, pool area grass, terrace artificial grass, pet-friendly artificial grass"
+    "title": "Indalturf | Instalación de Césped Artificial Premium en Almería",
+    "description": "Transforma tu espacio exterior con Indalturf. Instalación profesional de césped artificial en Almería, Costa de Almería y alrededores. Máxima calidad, servicio profesional y garantía de 10 años.",
+    "keywords": "césped artificial Almería, instalación césped artificial España, césped artificial premium, césped jardín Almería, césped zona piscina, césped artificial terraza, césped artificial mascotas"
   }
 }
