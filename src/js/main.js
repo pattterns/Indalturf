@@ -12,15 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Lenis Smooth Scroll Initialization
     // ============================================
     const lenis = new Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        orientation: 'vertical',
-        gestureOrientation: 'vertical',
-        smoothWheel: true,
-        wheelMultiplier: 1,
-        smoothTouch: false,
-        touchMultiplier: 2,
-        infinite: false
+        lerp: 0.08,                    // Suavidad del scroll (0.05-0.1 recomendado, más bajo = más suave)
+        smoothWheel: true,             // Suaviza el scroll con el mouse wheel
+        wheelMultiplier: 0.8,          // Reduce la velocidad del wheel (más bajo = más suave)
+        touchMultiplier: 1.5,          // Multiplicador para touch
+        infinite: false,               // Sin scroll infinito
+        orientation: 'vertical',       // Solo vertical
+        gestureOrientation: 'vertical' // Gestos verticales
     });
     
     // Request Animation Frame loop for Lenis
@@ -132,12 +130,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 closeMobileMenu();
                 
                 const navbarHeight = navbar ? navbar.offsetHeight : 0;
-                const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight - 20;
                 
-                // Use Lenis smooth scroll instead of native
-                lenis.scrollTo(targetPosition, {
-                    duration: 1.5,
-                    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+                // Use Lenis smooth scroll con el elemento directamente
+                lenis.scrollTo(target, {
+                    offset: -(navbarHeight + 20),  // Offset negativo para el navbar
+                    duration: 1.8,                  // Duración en segundos (más suave)
+                    easing: (t) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1  // easeInOutCubic
                 });
             }
         });
