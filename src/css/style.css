@@ -2303,6 +2303,11 @@ h4, .h4 {
   color: var(--color-gray-500);
 }
 
+.cta-textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
 .cta-form select option:first-child {
   color: var(--color-gray-500);
 }

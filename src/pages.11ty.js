@@ -496,6 +496,7 @@ module.exports = class {
                                 </select>
                                 <input type="number" name="square_meters" class="cta-input" placeholder="${i18n.cta.squareMetersPlaceholder}" min="1" required>
                             </div>
+                            <textarea name="message" class="cta-input cta-textarea" placeholder="${i18n.cta.messagePlaceholder}" rows="4"></textarea>
                             <button type="submit" class="btn btn-primary w-full">
                                 <span class="btn-text">${i18n.cta.button}</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">

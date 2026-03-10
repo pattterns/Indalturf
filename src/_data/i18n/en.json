@@ -214,6 +214,7 @@
       "Other"
     ],
     "squareMetersPlaceholder": "Approximate square meters",
+    "messagePlaceholder": "Leave us a message (optional)",
     "button": "Get Free Quote",
     "successMessage": "Request received! We'll contact you as soon as possible."
   },
