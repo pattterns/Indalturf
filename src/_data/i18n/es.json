@@ -123,7 +123,7 @@
   "about": {
     "eyebrow": "Sobre nosotros",
     "title": "La excelencia vive<br>en los detalles.",
-    "lead": "Indalturf es un equipo de profesionales especializados en la instalación de césped artificial de alta calidad en toda Almería.",
+    "lead": "Indalturf es un equipo de profesionales especializados en la instalación de césped artificial de alta calidad en toda Almería y Granada.",
     "text": "Combinamos soluciones innovadoras con una metodología propia para crear espacios exteriores sostenibles, hermosos y duraderos.",
     "values": {
       "trust": {
@@ -239,22 +239,14 @@
     "bookConsultation": "Reserva una visita gratuita"
   },
   "footer": {
-    "tagline": "Instalación de césped artificial premium en toda Almería. Transformando espacios exteriores con calidad, cuidado y experiencia. TU PROYECTO, NUESTRA PRIORIDAD.\n\n\n",
+    "tagline": "Instalación de césped artificial premium en toda Almería y Granada. Transformando espacios exteriores con calidad, cuidado y experiencia. TU PROYECTO, NUESTRA PRIORIDAD.\n\n\n",
     "navigation": "Navegación",
     "areas": "Áreas que servimos",
     "contact": "Contacto",
     "areasServed": [
-      "Ciudad de Almería",
-      "Mojácar",
-      "Vera y Garrucha",
-      "Roquetas de Mar",
-      "Macael",
-      "Tijola",
-      "Tabernas",
-      "Albox",
-      "Costa de Almería"
+      "AlmeriayGranada"
     ],
-    "location": "Almería, España",
+    "location": "Sede Almeria C/Marmoles 30 - Sede Granada C/ Zamora 120",
     "copyright": "© 2025 Indalturf. Todos los derechos reservados."
   },
   "stats": {
